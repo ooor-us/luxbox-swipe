@@ -66,6 +66,35 @@ export function createLook({ stage, room, key, renderer, scene, camera, tone, bo
     LUT[k] = Math.max((lo + hi) / 2, k ? LUT[k - 1] : 0);
   }
   LUT[0] = 0; LUT[LUT_N] = Math.PI / 2;
+  // Near the side of the ring the clasp's screen x is almost flat in angle, so the 1:1 solve stalls (~64 deg at
+  // u = 0.995) and the last LUT step jumped to 90 deg: neighbours rotated ~30 deg in one frame at the start of a
+  // swipe and at every page crossing. Past u0 the curve is a monotone cubic that reaches 90 deg with the same slope
+  // the next page starts with (theta'(0)), so the ring angle is continuous and smooth (C1) across page seams.
+  if (Q.get('lutfix') !== '0') {
+    const d = (k) => (LUT[Math.min(LUT_N, k + 1)] - LUT[Math.max(0, k - 1)]) / ((Math.min(LUT_N, k + 1) - Math.max(0, k - 1)) / LUT_N);
+    const mB = (LUT[1] - LUT[0]) * LUT_N, B = Math.PI / 2;
+    // latest start whose cubic stays monotone and never turns faster than MAXS (rad per page; ?lutmax= in deg/page)
+    const MAXS = +(Q.get('lutmax') || 150) * DEG;
+    let k0 = -1;
+    for (let k = Math.round(LUT_N * 0.95); k >= LUT_N * 0.3; k--) {
+      const h = 1 - k / LUT_N, A = LUT[k], mA = d(k);
+      let ok = mA >= 0, prev = A;
+      for (let j = 1; ok && j <= 40; j++) {
+        const s = j / 40, s2 = s * s;
+        const v = (2 * s2 * s - 3 * s2 + 1) * A + (s2 * s - 2 * s2 + s) * h * mA + (-2 * s2 * s + 3 * s2) * B + (s2 * s - s2) * h * mB;
+        if (v < prev - 1e-9 || (v - prev) / (h / 40) > Math.max(MAXS, mA * 1.02)) ok = false;
+        prev = v;
+      }
+      if (ok) { k0 = k; break; }
+    }
+    if (k0 > 0) {
+      const A = LUT[k0], mA = d(k0), h = 1 - k0 / LUT_N;
+      for (let k = k0 + 1; k < LUT_N; k++) {
+        const s = (k - k0) / (LUT_N - k0), s2 = s * s, s3 = s2 * s;
+        LUT[k] = (2 * s3 - 3 * s2 + 1) * A + (s3 - 2 * s2 + s) * h * mA + (-2 * s3 + 3 * s2) * B + (s3 - s2) * h * mB;
+      }
+    }
+  }
   const theta = (u) => { const x = u * LUT_N, k = Math.min(LUT_N - 1, Math.floor(x)), f = x - k; return LUT[k] + (LUT[k + 1] - LUT[k]) * f; };
   const angleOf = (rel) => { const a = Math.abs(rel), fl = Math.floor(a); return Math.sign(rel) * (fl * Math.PI / 2 + theta(a - fl)); };
   const GAIN = W / S_PAGE;
@@ -119,7 +148,14 @@ export function createLook({ stage, room, key, renderer, scene, camera, tone, bo
   }
 
   // cast shadow: frozen while anything moves (faded out), re-rendered once at rest and faded in
+  // Default now: the shadow map is re-rendered every moving frame and stays at full strength (fading it out made the
+  // neighbour box flash brighter the moment a swipe began). ?shadowfade=1 restores the old budget path.
+  const SHADOW_FADE = Q.get('shadowfade') === '1';
   function shadows(f, still) {
+    if (!SHADOW_FADE) {
+      if (!still || S.shadowPos !== f.position) { renderer.shadowMap.needsUpdate = true; S.shadowPos = f.position; }
+      key.spot.shadow.intensity = 1; return;
+    }
     if (still) {
       if (S.shadowPos !== f.position) { renderer.shadowMap.needsUpdate = true; S.shadowPos = f.position; if (f.frozen) S.shadowI = 1; }
       S.shadowI = Math.min(1, S.shadowI + f.dt / SHADOW_IN);

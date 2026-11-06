@@ -20,7 +20,12 @@ export function attachGesture(el, handlers = {}, opts = {}) {
   const root = document.documentElement;
   root.style.overscrollBehavior = 'none';
 
-  let id = null, x0 = 0, y0 = 0, t0 = 0, panning = false, rejected = false, samples = [];
+  let id = null, x0 = 0, y0 = 0, t0 = 0, panning = false, rejected = false, samples = [], off = 0;
+  // The pan starts after `slop` px; reporting the full translation at that moment made the box jump ~8 px in one
+  // frame. The slop is absorbed over the next `catchUp` px instead (the box moves ~1.15x the finger meanwhile), so
+  // the box starts from rest and is back under the finger 1:1 after a short travel.
+  const catchUp = opts.catchUp ?? 48;
+  const eased = (dx) => dx - off * Math.max(0, 1 - Math.abs(dx - off) / catchUp);
   const width = () => el.getBoundingClientRect().width || window.innerWidth;
 
   function velocity() {
@@ -46,10 +51,10 @@ export function attachGesture(el, handlers = {}, opts = {}) {
     if (!panning && !rejected) {
       if (Math.hypot(dx, dy) < slop) return;
       if (Math.abs(dy) > Math.abs(dx)) { rejected = true; return; }
-      panning = true;
+      panning = true; off = dx;
       handlers.onBegin && handlers.onBegin();
     }
-    if (panning) { handlers.onMove && handlers.onMove(dx, width(), dy); e.preventDefault(); }
+    if (panning) { handlers.onMove && handlers.onMove(eased(dx), width(), dy); e.preventDefault(); }
   }
   function up(e, cancelled) {
     if (e.pointerId !== id) return;
