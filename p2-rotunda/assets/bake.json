@@ -1,0 +1,113 @@
+{
+ "room": {
+  "NB": 12,
+  "STEP_deg": 30,
+  "RB": 6.6,
+  "RW": 10.2,
+  "RI": 8.5,
+  "WP": 0.56,
+  "DP": 0.34,
+  "WH": 9.0,
+  "ZF": -0.4516,
+  "ZC": 1.45,
+  "TC": 0.11,
+  "DC": 0.2,
+  "B0_deg": 15,
+  "wall_len": 24.005324500657984,
+  "prof_len": 9.4,
+  "floor_r1": 10.25
+ },
+ "camera": {
+  "dist": 9.6,
+  "height": 2.75,
+  "pitch_deg": 15.0,
+  "fov_deg": 53.1301,
+  "shift_ndc": 0.2372226740663148,
+  "box_bottom_pt": 393.0,
+  "note": "three.js frame: bay-0 camera at (RB - dist, height, 0), looking +X pitched down; projection y += shift_ndc"
+ },
+ "samples": 384,
+ "colour": [
+  "AgX",
+  "AgX - Medium High Contrast",
+  -0.3499999940395355
+ ],
+ "floor": {
+  "size": [
+   2048,
+   1024
+  ],
+  "linear_max": 12.63039779663086,
+  "linear_mean": 0.21807821094989777,
+  "caustic": {
+   "size": [
+    512,
+    256
+   ],
+   "scale": 0.010052341036498547,
+   "encoding": "(linear/scale)^(1/2.2)"
+  }
+ },
+ "disc": {
+  "size": [
+   2048,
+   2048
+  ],
+  "linear_max": 0.11002218723297119,
+  "linear_mean": 0.039279334247112274,
+  "caustic": {
+   "size": [
+    512,
+    512
+   ],
+   "scale": 0.05707048624753952,
+   "encoding": "(linear/scale)^(1/2.2)"
+  }
+ },
+ "wall": {
+  "size": [
+   4096,
+   1024
+  ],
+  "linear_max": 0.6503880620002747,
+  "linear_mean": 0.24241472780704498,
+  "caustic": {
+   "size": [
+    1024,
+    256
+   ],
+   "scale": 0.19220969080924988,
+   "encoding": "(linear/scale)^(1/2.2)"
+  }
+ },
+ "shipped": {
+  "wall.jpg": [
+   4096,
+   768
+  ],
+  "floor.jpg": [
+   2048,
+   1024
+  ],
+  "wall-caustic.png": [
+   1024,
+   192
+  ],
+  "floor-caustic.png": [
+   512,
+   256
+  ],
+  "caustic-tile.png": [
+   512,
+   512
+  ],
+  "blob.png": [
+   256,
+   256
+  ],
+  "detail.png": [
+   512,
+   512
+  ]
+ }
+}

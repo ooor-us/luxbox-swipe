@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+<head>
+<script src="../shared/js/diag.js"></script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<title>Window Light · p1</title>
+<script type="importmap">
+{ "imports": {
+  "three": "../shared/vendor/three/dist/three.module.js",
+  "three/addons/": "../shared/vendor/three/examples/jsm/"
+} }
+</script>
+<style>html, body { margin: 0; height: 100%; background: #000; overscroll-behavior: none; }</style>
+</head>
+<body>
+<script type="module">
+// p1 · Window Light (Lazar), round 4. One closed room, one window (out of frame, camera left), one sun, four hours.
+// The four boxes travel on a brass ring track; the hero's clasp moves exactly with the finger. Each box's screen hangs
+// on one strip that slides through the window with the finger and is the live SpotLight's gobo, so halfway the floor
+// and wall show two real patterns meeting; the room's hour (colour-matched to each box) follows the finger.
+import * as THREE from 'three';
+import { createStage } from '../shared/js/stage.js';
+import { STOPS } from '../shared/js/stops.js';
+import { loadStudioBoxes } from '../shared/js/box.js';
+import { createRoom } from './js/room.js';
+import { createKeyLight } from './js/light.js';
+import { createLook, PAGE_TINTS } from './js/look.js';
+
+const Q = new URLSearchParams(location.search);
+const RM = Q.get('rm') === '1' || (Q.get('rm') !== '0' && matchMedia('(prefers-reduced-motion: reduce)').matches);
+const HQ = Q.get('hq') === '1';   // round 4: the phone budget is the default; ?hq=1 restores 4x MSAA on the tone target and PCF-soft
+// Motion deviations (NOTES.md): gain is set from the layout so the hero tracks the finger 1:1 (look.js, ~1.8 vs
+// native 1.4); a slow drag must pass 40 % of a page to commit (native 28 %); reduced motion settles at omega 28.
+const stage = createStage({
+  name: 'p1 · Window Light',
+  tints: PAGE_TINTS,
+  motion: { commitStep: +(Q.get('commit') || 0.40), ...(RM ? { omega: 14 } : {}) },
+  maxDpr: +(Q.get('dpr') || 2),
+  onTap: (t, s) => { look.tap(t); },   // feedback only (a brief light flare); never opens
+});
+
+const renderer = new THREE.WebGLRenderer({ canvas: stage.canvas, antialias: false, alpha: true, premultipliedAlpha: true, powerPreference: 'high-performance' });
+renderer.setClearColor(0, 0);
+renderer.shadowMap.enabled = true;
+renderer.shadowMap.type = HQ ? THREE.PCFSoftShadowMap : THREE.PCFShadowMap;
+renderer.shadowMap.autoUpdate = false;   // re-rendered once at rest only; it fades out while the boxes travel (look.js)
+const scene = new THREE.Scene();
+
+let tone = null;
+const camera = new THREE.PerspectiveCamera(+(Q.get('fov') || 46), stage.width / stage.height, 0.1, 200);
+stage.onResize((w, h, dpr) => {
+  renderer.setPixelRatio(dpr); renderer.setSize(w, h, false);
+  camera.aspect = w / h; camera.updateProjectionMatrix();
+  if (tone) { const s = renderer.getDrawingBufferSize(new THREE.Vector2()); tone.setSize(s.x, s.y); }
+});
+const room = await createRoom(scene);
+const [studio, key] = await Promise.all([
+  loadStudioBoxes(renderer, STOPS, { aspect: stage.width / stage.height }),
+  createKeyLight(renderer, scene, room),
+]);
+tone = studio.tone;
+if (!HQ) { tone.target.samples = 0; tone.target.dispose(); }
+{ const s = renderer.getDrawingBufferSize(new THREE.Vector2()); tone.setSize(s.x, s.y); }
+
+const KEY_ON_SHELL = { value: +(Q.get('keyShell') || 0.22) }, KEY_ON_GOLD = { value: +(Q.get('keyGold') || 1.0) };
+// Emerald lacquer: its studio env is turned (envMapRotation) so the env's dark vertical bands fall off the front face
+const EROT = +(Q.get('erot') || 0) * Math.PI / 180, EROTX = +(Q.get('erotx') || 0) * Math.PI / 180;
+const boxes = STOPS.map((s) => {
+  const o = studio.boxes[s.key].object;
+  o.traverse((m) => {
+    if (!m.isMesh) return;
+    m.castShadow = true; m.receiveShadow = true;
+    for (const mat of (Array.isArray(m.material) ? m.material : [m.material])) {
+      if (s.key === 'emerald' && (EROT || EROTX) && mat.envMapRotation && /^(Box|Lid)/.test(m.name)) mat.envMapRotation.set(EROTX, EROT, 0);
+      const k = /LOCK|Gold|wordmark|Logo/i.test(mat.name + ' ' + m.name) ? KEY_ON_GOLD : KEY_ON_SHELL;
+      // emerald.glb's lacquer base colour carries dark baked bands (they read as stripes, critic r2). In this page
+      // only, the lacquer shell's base colour is floored at its own median lacquer green (sRGB 27,54,45), which
+      // lifts the bands and keeps every lighter texel. Geometry, clasp and wordmarks are untouched.
+      const lacq = s.key === 'emerald' && /^(Box|Lid)/.test(m.name) && Q.get('lacquerfix') !== '0';
+      mat.onBeforeCompile = (sh) => {
+        sh.uniforms.uKeyOnBox = k;
+        if (lacq) sh.fragmentShader = sh.fragmentShader.replace('#include <map_fragment>', '#include <map_fragment>\n diffuseColor.rgb = max(diffuseColor.rgb, vec3(0.0103, 0.0368, 0.0262));');
+        sh.fragmentShader = 'uniform float uKeyOnBox;\n' + sh.fragmentShader.replace('#include <lights_fragment_begin>',
+          THREE.ShaderChunk.lights_fragment_begin.replace('directLight.color = inSpotLightMap ? directLight.color * spotColor.rgb : directLight.color;',
+            'directLight.color = inSpotLightMap ? directLight.color * spotColor.rgb : directLight.color; directLight.color *= uKeyOnBox;'));
+      };
+      mat.customProgramCacheKey = () => 'p1key' + (k === KEY_ON_GOLD ? 'g' : 's') + (lacq ? 'L' : '');
+      mat.needsUpdate = true;
+    }
+  });
+  scene.add(o);
+  return o;
+});
+
+const look = createLook({ stage, room, key, renderer, scene, camera, tone, boxes, Q });
+stage.motion.config.gain = +(Q.get('gain') || look.GAIN);   // the hero tracks the finger 1:1 (see look.js)
+// A fast long flick carries two boxes, as a heavy ring would (critic r3). Native commits one page per gesture; here a
+// release faster than FLICK2 pt/s after more than 0.3 page of travel retargets one page further, and the native
+// spring (omega 18, release velocity carried) runs the rest. ?flick2=0 restores one box per gesture.
+const FLICK2 = +(Q.get('flick2') ?? 1300);
+{ const m = stage.motion, endDrag = m.endDrag.bind(m), drag = m.drag.bind(m); let lastPts = 0, lastW = 1;
+  m.drag = (pts, w) => { lastPts = pts; lastW = w; return drag(pts, w); };
+  m.endDrag = (pps, cancelled) => {
+    const inc = endDrag(pps, cancelled);
+    if (inc && FLICK2 > 0 && Math.abs(pps) > FLICK2 && Math.abs(lastPts / lastW * m.config.gain) > 0.3 && Math.sign(-pps) === inc) {
+      m.select(m.selectedIndex + inc);   // the committed page + one more, nearest way round the loop
+    }
+    return inc;
+  };
+}
+// pre-warm both box material states (opaque at rest, transparent while fading at the back), so the first swipe
+// never compiles a program mid-gesture
+{ const all = []; boxes.forEach((o) => o.traverse((m) => { if (m.isMesh) all.push(...[].concat(m.material)); }));
+  for (const tr of [false, true]) { all.forEach((m) => { m.transparent = tr; }); boxes.forEach((o) => { o.visible = true; }); renderer.compile(scene, camera); tone.render(scene, camera); }
+  await new Promise((r) => requestAnimationFrame(r)); }
+stage.onFrame((f) => look.frame(f));
+window.__p1 = look;
+window.__renderInfo = () => { renderer.info.autoReset = false; renderer.info.reset(); tone.render(scene, camera); const r = { ...renderer.info.render }; renderer.info.autoReset = true; let meshes = 0; scene.traverse((o) => { if (o.isMesh && o.visible) meshes++; }); return { ...r, meshes }; };
+stage.setInfo({
+  boxSources: Object.fromEntries(STOPS.map((s) => [s.key, studio.boxes[s.key].source])),
+  bakedRoom: room.baked,
+  dragGain: +stage.motion.config.gain.toFixed(4), ptPerPage: +look.S_PAGE.toFixed(1),
+  reducedMotionNote: 'Reduced motion: nothing travels (no camera move, no ring). When the swipe commits, the box dissolves in place into the next one (0.5 s) while the room changes hour (0.8 s) and the next screen slides slowly into the window; the name changes at the middle. Spring omega 14 (slower than native 18).',
+  budget: { sceneMaxDpr: stage.dpr, hq: HQ, toneMSAA: HQ ? 4 : 0, shadowMap: 512, shadowType: HQ ? 'PCFSoft' : 'PCF', slideTarget: 512, shadowUpdates: 'once at rest; faded out while boxes travel', boxes: 'opaque unless fading', slideUpdates: 'only when the strip moved or the caustic is in view' },
+});
+stage.start();
+let n = 0; stage.onFrame(() => { if (++n === 4) stage.markReady(); });
+</script>
+</body>
+</html>

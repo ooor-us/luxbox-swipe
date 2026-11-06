@@ -1,0 +1,1924 @@
+{
+ "obsidian/LB_Lid_Pad/map": {
+  "file": "boxtex/obsidian-2.bc1",
+  "size": 1024,
+  "levels": [
+   {
+    "size": 1024,
+    "offset": 0,
+    "bytes": 524288
+   },
+   {
+    "size": 512,
+    "offset": 524288,
+    "bytes": 131072
+   },
+   {
+    "size": 256,
+    "offset": 655360,
+    "bytes": 32768
+   },
+   {
+    "size": 128,
+    "offset": 688128,
+    "bytes": 8192
+   },
+   {
+    "size": 64,
+    "offset": 696320,
+    "bytes": 2048
+   },
+   {
+    "size": 32,
+    "offset": 698368,
+    "bytes": 512
+   },
+   {
+    "size": 16,
+    "offset": 698880,
+    "bytes": 128
+   },
+   {
+    "size": 8,
+    "offset": 699008,
+    "bytes": 32
+   },
+   {
+    "size": 4,
+    "offset": 699040,
+    "bytes": 8
+   },
+   {
+    "size": 2,
+    "offset": 699048,
+    "bytes": 8
+   },
+   {
+    "size": 1,
+    "offset": 699056,
+    "bytes": 8
+   }
+  ],
+  "srgb": true
+ },
+ "obsidian/LB_Lid_Pad/normalMap": {
+  "file": "boxtex/obsidian-0.bc1",
+  "size": 1024,
+  "levels": [
+   {
+    "size": 1024,
+    "offset": 0,
+    "bytes": 524288
+   },
+   {
+    "size": 512,
+    "offset": 524288,
+    "bytes": 131072
+   },
+   {
+    "size": 256,
+    "offset": 655360,
+    "bytes": 32768
+   },
+   {
+    "size": 128,
+    "offset": 688128,
+    "bytes": 8192
+   },
+   {
+    "size": 64,
+    "offset": 696320,
+    "bytes": 2048
+   },
+   {
+    "size": 32,
+    "offset": 698368,
+    "bytes": 512
+   },
+   {
+    "size": 16,
+    "offset": 698880,
+    "bytes": 128
+   },
+   {
+    "size": 8,
+    "offset": 699008,
+    "bytes": 32
+   },
+   {
+    "size": 4,
+    "offset": 699040,
+    "bytes": 8
+   },
+   {
+    "size": 2,
+    "offset": 699048,
+    "bytes": 8
+   },
+   {
+    "size": 1,
+    "offset": 699056,
+    "bytes": 8
+   }
+  ],
+  "srgb": false
+ },
+ "obsidian/LB_Lid_Pad/orm": {
+  "file": "boxtex/obsidian-1.bc1",
+  "size": 1024,
+  "levels": [
+   {
+    "size": 1024,
+    "offset": 0,
+    "bytes": 524288
+   },
+   {
+    "size": 512,
+    "offset": 524288,
+    "bytes": 131072
+   },
+   {
+    "size": 256,
+    "offset": 655360,
+    "bytes": 32768
+   },
+   {
+    "size": 128,
+    "offset": 688128,
+    "bytes": 8192
+   },
+   {
+    "size": 64,
+    "offset": 696320,
+    "bytes": 2048
+   },
+   {
+    "size": 32,
+    "offset": 698368,
+    "bytes": 512
+   },
+   {
+    "size": 16,
+    "offset": 698880,
+    "bytes": 128
+   },
+   {
+    "size": 8,
+    "offset": 699008,
+    "bytes": 32
+   },
+   {
+    "size": 4,
+    "offset": 699040,
+    "bytes": 8
+   },
+   {
+    "size": 2,
+    "offset": 699048,
+    "bytes": 8
+   },
+   {
+    "size": 1,
+    "offset": 699056,
+    "bytes": 8
+   }
+  ],
+  "srgb": false
+ },
+ "obsidian/LB_Lid/map": {
+  "file": "boxtex/obsidian-5.bc1",
+  "size": 1024,
+  "levels": [
+   {
+    "size": 1024,
+    "offset": 0,
+    "bytes": 524288
+   },
+   {
+    "size": 512,
+    "offset": 524288,
+    "bytes": 131072
+   },
+   {
+    "size": 256,
+    "offset": 655360,
+    "bytes": 32768
+   },
+   {
+    "size": 128,
+    "offset": 688128,
+    "bytes": 8192
+   },
+   {
+    "size": 64,
+    "offset": 696320,
+    "bytes": 2048
+   },
+   {
+    "size": 32,
+    "offset": 698368,
+    "bytes": 512
+   },
+   {
+    "size": 16,
+    "offset": 698880,
+    "bytes": 128
+   },
+   {
+    "size": 8,
+    "offset": 699008,
+    "bytes": 32
+   },
+   {
+    "size": 4,
+    "offset": 699040,
+    "bytes": 8
+   },
+   {
+    "size": 2,
+    "offset": 699048,
+    "bytes": 8
+   },
+   {
+    "size": 1,
+    "offset": 699056,
+    "bytes": 8
+   }
+  ],
+  "srgb": true
+ },
+ "obsidian/LB_Lid/normalMap": {
+  "file": "boxtex/obsidian-3.bc1",
+  "size": 1024,
+  "levels": [
+   {
+    "size": 1024,
+    "offset": 0,
+    "bytes": 524288
+   },
+   {
+    "size": 512,
+    "offset": 524288,
+    "bytes": 131072
+   },
+   {
+    "size": 256,
+    "offset": 655360,
+    "bytes": 32768
+   },
+   {
+    "size": 128,
+    "offset": 688128,
+    "bytes": 8192
+   },
+   {
+    "size": 64,
+    "offset": 696320,
+    "bytes": 2048
+   },
+   {
+    "size": 32,
+    "offset": 698368,
+    "bytes": 512
+   },
+   {
+    "size": 16,
+    "offset": 698880,
+    "bytes": 128
+   },
+   {
+    "size": 8,
+    "offset": 699008,
+    "bytes": 32
+   },
+   {
+    "size": 4,
+    "offset": 699040,
+    "bytes": 8
+   },
+   {
+    "size": 2,
+    "offset": 699048,
+    "bytes": 8
+   },
+   {
+    "size": 1,
+    "offset": 699056,
+    "bytes": 8
+   }
+  ],
+  "srgb": false
+ },
+ "obsidian/LB_Lid/orm": {
+  "file": "boxtex/obsidian-4.bc1",
+  "size": 1024,
+  "levels": [
+   {
+    "size": 1024,
+    "offset": 0,
+    "bytes": 524288
+   },
+   {
+    "size": 512,
+    "offset": 524288,
+    "bytes": 131072
+   },
+   {
+    "size": 256,
+    "offset": 655360,
+    "bytes": 32768
+   },
+   {
+    "size": 128,
+    "offset": 688128,
+    "bytes": 8192
+   },
+   {
+    "size": 64,
+    "offset": 696320,
+    "bytes": 2048
+   },
+   {
+    "size": 32,
+    "offset": 698368,
+    "bytes": 512
+   },
+   {
+    "size": 16,
+    "offset": 698880,
+    "bytes": 128
+   },
+   {
+    "size": 8,
+    "offset": 699008,
+    "bytes": 32
+   },
+   {
+    "size": 4,
+    "offset": 699040,
+    "bytes": 8
+   },
+   {
+    "size": 2,
+    "offset": 699048,
+    "bytes": 8
+   },
+   {
+    "size": 1,
+    "offset": 699056,
+    "bytes": 8
+   }
+  ],
+  "srgb": false
+ },
+ "obsidian/LB_Box/map": {
+  "file": "boxtex/obsidian-8.bc1",
+  "size": 1024,
+  "levels": [
+   {
+    "size": 1024,
+    "offset": 0,
+    "bytes": 524288
+   },
+   {
+    "size": 512,
+    "offset": 524288,
+    "bytes": 131072
+   },
+   {
+    "size": 256,
+    "offset": 655360,
+    "bytes": 32768
+   },
+   {
+    "size": 128,
+    "offset": 688128,
+    "bytes": 8192
+   },
+   {
+    "size": 64,
+    "offset": 696320,
+    "bytes": 2048
+   },
+   {
+    "size": 32,
+    "offset": 698368,
+    "bytes": 512
+   },
+   {
+    "size": 16,
+    "offset": 698880,
+    "bytes": 128
+   },
+   {
+    "size": 8,
+    "offset": 699008,
+    "bytes": 32
+   },
+   {
+    "size": 4,
+    "offset": 699040,
+    "bytes": 8
+   },
+   {
+    "size": 2,
+    "offset": 699048,
+    "bytes": 8
+   },
+   {
+    "size": 1,
+    "offset": 699056,
+    "bytes": 8
+   }
+  ],
+  "srgb": true
+ },
+ "obsidian/LB_Box/normalMap": {
+  "file": "boxtex/obsidian-6.bc1",
+  "size": 1024,
+  "levels": [
+   {
+    "size": 1024,
+    "offset": 0,
+    "bytes": 524288
+   },
+   {
+    "size": 512,
+    "offset": 524288,
+    "bytes": 131072
+   },
+   {
+    "size": 256,
+    "offset": 655360,
+    "bytes": 32768
+   },
+   {
+    "size": 128,
+    "offset": 688128,
+    "bytes": 8192
+   },
+   {
+    "size": 64,
+    "offset": 696320,
+    "bytes": 2048
+   },
+   {
+    "size": 32,
+    "offset": 698368,
+    "bytes": 512
+   },
+   {
+    "size": 16,
+    "offset": 698880,
+    "bytes": 128
+   },
+   {
+    "size": 8,
+    "offset": 699008,
+    "bytes": 32
+   },
+   {
+    "size": 4,
+    "offset": 699040,
+    "bytes": 8
+   },
+   {
+    "size": 2,
+    "offset": 699048,
+    "bytes": 8
+   },
+   {
+    "size": 1,
+    "offset": 699056,
+    "bytes": 8
+   }
+  ],
+  "srgb": false
+ },
+ "obsidian/LB_Box/orm": {
+  "file": "boxtex/obsidian-7.bc1",
+  "size": 1024,
+  "levels": [
+   {
+    "size": 1024,
+    "offset": 0,
+    "bytes": 524288
+   },
+   {
+    "size": 512,
+    "offset": 524288,
+    "bytes": 131072
+   },
+   {
+    "size": 256,
+    "offset": 655360,
+    "bytes": 32768
+   },
+   {
+    "size": 128,
+    "offset": 688128,
+    "bytes": 8192
+   },
+   {
+    "size": 64,
+    "offset": 696320,
+    "bytes": 2048
+   },
+   {
+    "size": 32,
+    "offset": 698368,
+    "bytes": 512
+   },
+   {
+    "size": 16,
+    "offset": 698880,
+    "bytes": 128
+   },
+   {
+    "size": 8,
+    "offset": 699008,
+    "bytes": 32
+   },
+   {
+    "size": 4,
+    "offset": 699040,
+    "bytes": 8
+   },
+   {
+    "size": 2,
+    "offset": 699048,
+    "bytes": 8
+   },
+   {
+    "size": 1,
+    "offset": 699056,
+    "bytes": 8
+   }
+  ],
+  "srgb": false
+ },
+ "sapphire/LB_Lid_Pad/map": {
+  "file": "boxtex/sapphire-2.bc1",
+  "size": 1024,
+  "levels": [
+   {
+    "size": 1024,
+    "offset": 0,
+    "bytes": 524288
+   },
+   {
+    "size": 512,
+    "offset": 524288,
+    "bytes": 131072
+   },
+   {
+    "size": 256,
+    "offset": 655360,
+    "bytes": 32768
+   },
+   {
+    "size": 128,
+    "offset": 688128,
+    "bytes": 8192
+   },
+   {
+    "size": 64,
+    "offset": 696320,
+    "bytes": 2048
+   },
+   {
+    "size": 32,
+    "offset": 698368,
+    "bytes": 512
+   },
+   {
+    "size": 16,
+    "offset": 698880,
+    "bytes": 128
+   },
+   {
+    "size": 8,
+    "offset": 699008,
+    "bytes": 32
+   },
+   {
+    "size": 4,
+    "offset": 699040,
+    "bytes": 8
+   },
+   {
+    "size": 2,
+    "offset": 699048,
+    "bytes": 8
+   },
+   {
+    "size": 1,
+    "offset": 699056,
+    "bytes": 8
+   }
+  ],
+  "srgb": true
+ },
+ "sapphire/LB_Lid_Pad/normalMap": {
+  "file": "boxtex/sapphire-0.bc1",
+  "size": 1024,
+  "levels": [
+   {
+    "size": 1024,
+    "offset": 0,
+    "bytes": 524288
+   },
+   {
+    "size": 512,
+    "offset": 524288,
+    "bytes": 131072
+   },
+   {
+    "size": 256,
+    "offset": 655360,
+    "bytes": 32768
+   },
+   {
+    "size": 128,
+    "offset": 688128,
+    "bytes": 8192
+   },
+   {
+    "size": 64,
+    "offset": 696320,
+    "bytes": 2048
+   },
+   {
+    "size": 32,
+    "offset": 698368,
+    "bytes": 512
+   },
+   {
+    "size": 16,
+    "offset": 698880,
+    "bytes": 128
+   },
+   {
+    "size": 8,
+    "offset": 699008,
+    "bytes": 32
+   },
+   {
+    "size": 4,
+    "offset": 699040,
+    "bytes": 8
+   },
+   {
+    "size": 2,
+    "offset": 699048,
+    "bytes": 8
+   },
+   {
+    "size": 1,
+    "offset": 699056,
+    "bytes": 8
+   }
+  ],
+  "srgb": false
+ },
+ "sapphire/LB_Lid_Pad/orm": {
+  "file": "boxtex/sapphire-1.bc1",
+  "size": 1024,
+  "levels": [
+   {
+    "size": 1024,
+    "offset": 0,
+    "bytes": 524288
+   },
+   {
+    "size": 512,
+    "offset": 524288,
+    "bytes": 131072
+   },
+   {
+    "size": 256,
+    "offset": 655360,
+    "bytes": 32768
+   },
+   {
+    "size": 128,
+    "offset": 688128,
+    "bytes": 8192
+   },
+   {
+    "size": 64,
+    "offset": 696320,
+    "bytes": 2048
+   },
+   {
+    "size": 32,
+    "offset": 698368,
+    "bytes": 512
+   },
+   {
+    "size": 16,
+    "offset": 698880,
+    "bytes": 128
+   },
+   {
+    "size": 8,
+    "offset": 699008,
+    "bytes": 32
+   },
+   {
+    "size": 4,
+    "offset": 699040,
+    "bytes": 8
+   },
+   {
+    "size": 2,
+    "offset": 699048,
+    "bytes": 8
+   },
+   {
+    "size": 1,
+    "offset": 699056,
+    "bytes": 8
+   }
+  ],
+  "srgb": false
+ },
+ "sapphire/LB_Lid/map": {
+  "file": "boxtex/sapphire-5.bc1",
+  "size": 1024,
+  "levels": [
+   {
+    "size": 1024,
+    "offset": 0,
+    "bytes": 524288
+   },
+   {
+    "size": 512,
+    "offset": 524288,
+    "bytes": 131072
+   },
+   {
+    "size": 256,
+    "offset": 655360,
+    "bytes": 32768
+   },
+   {
+    "size": 128,
+    "offset": 688128,
+    "bytes": 8192
+   },
+   {
+    "size": 64,
+    "offset": 696320,
+    "bytes": 2048
+   },
+   {
+    "size": 32,
+    "offset": 698368,
+    "bytes": 512
+   },
+   {
+    "size": 16,
+    "offset": 698880,
+    "bytes": 128
+   },
+   {
+    "size": 8,
+    "offset": 699008,
+    "bytes": 32
+   },
+   {
+    "size": 4,
+    "offset": 699040,
+    "bytes": 8
+   },
+   {
+    "size": 2,
+    "offset": 699048,
+    "bytes": 8
+   },
+   {
+    "size": 1,
+    "offset": 699056,
+    "bytes": 8
+   }
+  ],
+  "srgb": true
+ },
+ "sapphire/LB_Lid/normalMap": {
+  "file": "boxtex/sapphire-3.bc1",
+  "size": 1024,
+  "levels": [
+   {
+    "size": 1024,
+    "offset": 0,
+    "bytes": 524288
+   },
+   {
+    "size": 512,
+    "offset": 524288,
+    "bytes": 131072
+   },
+   {
+    "size": 256,
+    "offset": 655360,
+    "bytes": 32768
+   },
+   {
+    "size": 128,
+    "offset": 688128,
+    "bytes": 8192
+   },
+   {
+    "size": 64,
+    "offset": 696320,
+    "bytes": 2048
+   },
+   {
+    "size": 32,
+    "offset": 698368,
+    "bytes": 512
+   },
+   {
+    "size": 16,
+    "offset": 698880,
+    "bytes": 128
+   },
+   {
+    "size": 8,
+    "offset": 699008,
+    "bytes": 32
+   },
+   {
+    "size": 4,
+    "offset": 699040,
+    "bytes": 8
+   },
+   {
+    "size": 2,
+    "offset": 699048,
+    "bytes": 8
+   },
+   {
+    "size": 1,
+    "offset": 699056,
+    "bytes": 8
+   }
+  ],
+  "srgb": false
+ },
+ "sapphire/LB_Lid/orm": {
+  "file": "boxtex/sapphire-4.bc1",
+  "size": 1024,
+  "levels": [
+   {
+    "size": 1024,
+    "offset": 0,
+    "bytes": 524288
+   },
+   {
+    "size": 512,
+    "offset": 524288,
+    "bytes": 131072
+   },
+   {
+    "size": 256,
+    "offset": 655360,
+    "bytes": 32768
+   },
+   {
+    "size": 128,
+    "offset": 688128,
+    "bytes": 8192
+   },
+   {
+    "size": 64,
+    "offset": 696320,
+    "bytes": 2048
+   },
+   {
+    "size": 32,
+    "offset": 698368,
+    "bytes": 512
+   },
+   {
+    "size": 16,
+    "offset": 698880,
+    "bytes": 128
+   },
+   {
+    "size": 8,
+    "offset": 699008,
+    "bytes": 32
+   },
+   {
+    "size": 4,
+    "offset": 699040,
+    "bytes": 8
+   },
+   {
+    "size": 2,
+    "offset": 699048,
+    "bytes": 8
+   },
+   {
+    "size": 1,
+    "offset": 699056,
+    "bytes": 8
+   }
+  ],
+  "srgb": false
+ },
+ "sapphire/LB_Box/map": {
+  "file": "boxtex/sapphire-8.bc1",
+  "size": 1024,
+  "levels": [
+   {
+    "size": 1024,
+    "offset": 0,
+    "bytes": 524288
+   },
+   {
+    "size": 512,
+    "offset": 524288,
+    "bytes": 131072
+   },
+   {
+    "size": 256,
+    "offset": 655360,
+    "bytes": 32768
+   },
+   {
+    "size": 128,
+    "offset": 688128,
+    "bytes": 8192
+   },
+   {
+    "size": 64,
+    "offset": 696320,
+    "bytes": 2048
+   },
+   {
+    "size": 32,
+    "offset": 698368,
+    "bytes": 512
+   },
+   {
+    "size": 16,
+    "offset": 698880,
+    "bytes": 128
+   },
+   {
+    "size": 8,
+    "offset": 699008,
+    "bytes": 32
+   },
+   {
+    "size": 4,
+    "offset": 699040,
+    "bytes": 8
+   },
+   {
+    "size": 2,
+    "offset": 699048,
+    "bytes": 8
+   },
+   {
+    "size": 1,
+    "offset": 699056,
+    "bytes": 8
+   }
+  ],
+  "srgb": true
+ },
+ "sapphire/LB_Box/normalMap": {
+  "file": "boxtex/sapphire-6.bc1",
+  "size": 1024,
+  "levels": [
+   {
+    "size": 1024,
+    "offset": 0,
+    "bytes": 524288
+   },
+   {
+    "size": 512,
+    "offset": 524288,
+    "bytes": 131072
+   },
+   {
+    "size": 256,
+    "offset": 655360,
+    "bytes": 32768
+   },
+   {
+    "size": 128,
+    "offset": 688128,
+    "bytes": 8192
+   },
+   {
+    "size": 64,
+    "offset": 696320,
+    "bytes": 2048
+   },
+   {
+    "size": 32,
+    "offset": 698368,
+    "bytes": 512
+   },
+   {
+    "size": 16,
+    "offset": 698880,
+    "bytes": 128
+   },
+   {
+    "size": 8,
+    "offset": 699008,
+    "bytes": 32
+   },
+   {
+    "size": 4,
+    "offset": 699040,
+    "bytes": 8
+   },
+   {
+    "size": 2,
+    "offset": 699048,
+    "bytes": 8
+   },
+   {
+    "size": 1,
+    "offset": 699056,
+    "bytes": 8
+   }
+  ],
+  "srgb": false
+ },
+ "sapphire/LB_Box/orm": {
+  "file": "boxtex/sapphire-7.bc1",
+  "size": 1024,
+  "levels": [
+   {
+    "size": 1024,
+    "offset": 0,
+    "bytes": 524288
+   },
+   {
+    "size": 512,
+    "offset": 524288,
+    "bytes": 131072
+   },
+   {
+    "size": 256,
+    "offset": 655360,
+    "bytes": 32768
+   },
+   {
+    "size": 128,
+    "offset": 688128,
+    "bytes": 8192
+   },
+   {
+    "size": 64,
+    "offset": 696320,
+    "bytes": 2048
+   },
+   {
+    "size": 32,
+    "offset": 698368,
+    "bytes": 512
+   },
+   {
+    "size": 16,
+    "offset": 698880,
+    "bytes": 128
+   },
+   {
+    "size": 8,
+    "offset": 699008,
+    "bytes": 32
+   },
+   {
+    "size": 4,
+    "offset": 699040,
+    "bytes": 8
+   },
+   {
+    "size": 2,
+    "offset": 699048,
+    "bytes": 8
+   },
+   {
+    "size": 1,
+    "offset": 699056,
+    "bytes": 8
+   }
+  ],
+  "srgb": false
+ },
+ "emerald/LB_Lid/map": {
+  "file": "boxtex/emerald-1.bc1",
+  "size": 1024,
+  "levels": [
+   {
+    "size": 1024,
+    "offset": 0,
+    "bytes": 524288
+   },
+   {
+    "size": 512,
+    "offset": 524288,
+    "bytes": 131072
+   },
+   {
+    "size": 256,
+    "offset": 655360,
+    "bytes": 32768
+   },
+   {
+    "size": 128,
+    "offset": 688128,
+    "bytes": 8192
+   },
+   {
+    "size": 64,
+    "offset": 696320,
+    "bytes": 2048
+   },
+   {
+    "size": 32,
+    "offset": 698368,
+    "bytes": 512
+   },
+   {
+    "size": 16,
+    "offset": 698880,
+    "bytes": 128
+   },
+   {
+    "size": 8,
+    "offset": 699008,
+    "bytes": 32
+   },
+   {
+    "size": 4,
+    "offset": 699040,
+    "bytes": 8
+   },
+   {
+    "size": 2,
+    "offset": 699048,
+    "bytes": 8
+   },
+   {
+    "size": 1,
+    "offset": 699056,
+    "bytes": 8
+   }
+  ],
+  "srgb": true
+ },
+ "emerald/LB_Lid/orm": {
+  "file": "boxtex/emerald-0.bc1",
+  "size": 1024,
+  "levels": [
+   {
+    "size": 1024,
+    "offset": 0,
+    "bytes": 524288
+   },
+   {
+    "size": 512,
+    "offset": 524288,
+    "bytes": 131072
+   },
+   {
+    "size": 256,
+    "offset": 655360,
+    "bytes": 32768
+   },
+   {
+    "size": 128,
+    "offset": 688128,
+    "bytes": 8192
+   },
+   {
+    "size": 64,
+    "offset": 696320,
+    "bytes": 2048
+   },
+   {
+    "size": 32,
+    "offset": 698368,
+    "bytes": 512
+   },
+   {
+    "size": 16,
+    "offset": 698880,
+    "bytes": 128
+   },
+   {
+    "size": 8,
+    "offset": 699008,
+    "bytes": 32
+   },
+   {
+    "size": 4,
+    "offset": 699040,
+    "bytes": 8
+   },
+   {
+    "size": 2,
+    "offset": 699048,
+    "bytes": 8
+   },
+   {
+    "size": 1,
+    "offset": 699056,
+    "bytes": 8
+   }
+  ],
+  "srgb": false
+ },
+ "emerald/LB_Box/map": {
+  "file": "boxtex/emerald-3.bc1",
+  "size": 1024,
+  "levels": [
+   {
+    "size": 1024,
+    "offset": 0,
+    "bytes": 524288
+   },
+   {
+    "size": 512,
+    "offset": 524288,
+    "bytes": 131072
+   },
+   {
+    "size": 256,
+    "offset": 655360,
+    "bytes": 32768
+   },
+   {
+    "size": 128,
+    "offset": 688128,
+    "bytes": 8192
+   },
+   {
+    "size": 64,
+    "offset": 696320,
+    "bytes": 2048
+   },
+   {
+    "size": 32,
+    "offset": 698368,
+    "bytes": 512
+   },
+   {
+    "size": 16,
+    "offset": 698880,
+    "bytes": 128
+   },
+   {
+    "size": 8,
+    "offset": 699008,
+    "bytes": 32
+   },
+   {
+    "size": 4,
+    "offset": 699040,
+    "bytes": 8
+   },
+   {
+    "size": 2,
+    "offset": 699048,
+    "bytes": 8
+   },
+   {
+    "size": 1,
+    "offset": 699056,
+    "bytes": 8
+   }
+  ],
+  "srgb": true
+ },
+ "emerald/LB_Box/orm": {
+  "file": "boxtex/emerald-2.bc1",
+  "size": 1024,
+  "levels": [
+   {
+    "size": 1024,
+    "offset": 0,
+    "bytes": 524288
+   },
+   {
+    "size": 512,
+    "offset": 524288,
+    "bytes": 131072
+   },
+   {
+    "size": 256,
+    "offset": 655360,
+    "bytes": 32768
+   },
+   {
+    "size": 128,
+    "offset": 688128,
+    "bytes": 8192
+   },
+   {
+    "size": 64,
+    "offset": 696320,
+    "bytes": 2048
+   },
+   {
+    "size": 32,
+    "offset": 698368,
+    "bytes": 512
+   },
+   {
+    "size": 16,
+    "offset": 698880,
+    "bytes": 128
+   },
+   {
+    "size": 8,
+    "offset": 699008,
+    "bytes": 32
+   },
+   {
+    "size": 4,
+    "offset": 699040,
+    "bytes": 8
+   },
+   {
+    "size": 2,
+    "offset": 699048,
+    "bytes": 8
+   },
+   {
+    "size": 1,
+    "offset": 699056,
+    "bytes": 8
+   }
+  ],
+  "srgb": false
+ },
+ "amethyst/LB_Lid_Pad/map": {
+  "file": "boxtex/amethyst-2.bc1",
+  "size": 1024,
+  "levels": [
+   {
+    "size": 1024,
+    "offset": 0,
+    "bytes": 524288
+   },
+   {
+    "size": 512,
+    "offset": 524288,
+    "bytes": 131072
+   },
+   {
+    "size": 256,
+    "offset": 655360,
+    "bytes": 32768
+   },
+   {
+    "size": 128,
+    "offset": 688128,
+    "bytes": 8192
+   },
+   {
+    "size": 64,
+    "offset": 696320,
+    "bytes": 2048
+   },
+   {
+    "size": 32,
+    "offset": 698368,
+    "bytes": 512
+   },
+   {
+    "size": 16,
+    "offset": 698880,
+    "bytes": 128
+   },
+   {
+    "size": 8,
+    "offset": 699008,
+    "bytes": 32
+   },
+   {
+    "size": 4,
+    "offset": 699040,
+    "bytes": 8
+   },
+   {
+    "size": 2,
+    "offset": 699048,
+    "bytes": 8
+   },
+   {
+    "size": 1,
+    "offset": 699056,
+    "bytes": 8
+   }
+  ],
+  "srgb": true
+ },
+ "amethyst/LB_Lid_Pad/normalMap": {
+  "file": "boxtex/amethyst-0.bc1",
+  "size": 1024,
+  "levels": [
+   {
+    "size": 1024,
+    "offset": 0,
+    "bytes": 524288
+   },
+   {
+    "size": 512,
+    "offset": 524288,
+    "bytes": 131072
+   },
+   {
+    "size": 256,
+    "offset": 655360,
+    "bytes": 32768
+   },
+   {
+    "size": 128,
+    "offset": 688128,
+    "bytes": 8192
+   },
+   {
+    "size": 64,
+    "offset": 696320,
+    "bytes": 2048
+   },
+   {
+    "size": 32,
+    "offset": 698368,
+    "bytes": 512
+   },
+   {
+    "size": 16,
+    "offset": 698880,
+    "bytes": 128
+   },
+   {
+    "size": 8,
+    "offset": 699008,
+    "bytes": 32
+   },
+   {
+    "size": 4,
+    "offset": 699040,
+    "bytes": 8
+   },
+   {
+    "size": 2,
+    "offset": 699048,
+    "bytes": 8
+   },
+   {
+    "size": 1,
+    "offset": 699056,
+    "bytes": 8
+   }
+  ],
+  "srgb": false
+ },
+ "amethyst/LB_Lid_Pad/orm": {
+  "file": "boxtex/amethyst-1.bc1",
+  "size": 1024,
+  "levels": [
+   {
+    "size": 1024,
+    "offset": 0,
+    "bytes": 524288
+   },
+   {
+    "size": 512,
+    "offset": 524288,
+    "bytes": 131072
+   },
+   {
+    "size": 256,
+    "offset": 655360,
+    "bytes": 32768
+   },
+   {
+    "size": 128,
+    "offset": 688128,
+    "bytes": 8192
+   },
+   {
+    "size": 64,
+    "offset": 696320,
+    "bytes": 2048
+   },
+   {
+    "size": 32,
+    "offset": 698368,
+    "bytes": 512
+   },
+   {
+    "size": 16,
+    "offset": 698880,
+    "bytes": 128
+   },
+   {
+    "size": 8,
+    "offset": 699008,
+    "bytes": 32
+   },
+   {
+    "size": 4,
+    "offset": 699040,
+    "bytes": 8
+   },
+   {
+    "size": 2,
+    "offset": 699048,
+    "bytes": 8
+   },
+   {
+    "size": 1,
+    "offset": 699056,
+    "bytes": 8
+   }
+  ],
+  "srgb": false
+ },
+ "amethyst/LB_Lid/map": {
+  "file": "boxtex/amethyst-5.bc1",
+  "size": 1024,
+  "levels": [
+   {
+    "size": 1024,
+    "offset": 0,
+    "bytes": 524288
+   },
+   {
+    "size": 512,
+    "offset": 524288,
+    "bytes": 131072
+   },
+   {
+    "size": 256,
+    "offset": 655360,
+    "bytes": 32768
+   },
+   {
+    "size": 128,
+    "offset": 688128,
+    "bytes": 8192
+   },
+   {
+    "size": 64,
+    "offset": 696320,
+    "bytes": 2048
+   },
+   {
+    "size": 32,
+    "offset": 698368,
+    "bytes": 512
+   },
+   {
+    "size": 16,
+    "offset": 698880,
+    "bytes": 128
+   },
+   {
+    "size": 8,
+    "offset": 699008,
+    "bytes": 32
+   },
+   {
+    "size": 4,
+    "offset": 699040,
+    "bytes": 8
+   },
+   {
+    "size": 2,
+    "offset": 699048,
+    "bytes": 8
+   },
+   {
+    "size": 1,
+    "offset": 699056,
+    "bytes": 8
+   }
+  ],
+  "srgb": true
+ },
+ "amethyst/LB_Lid/normalMap": {
+  "file": "boxtex/amethyst-3.bc1",
+  "size": 1024,
+  "levels": [
+   {
+    "size": 1024,
+    "offset": 0,
+    "bytes": 524288
+   },
+   {
+    "size": 512,
+    "offset": 524288,
+    "bytes": 131072
+   },
+   {
+    "size": 256,
+    "offset": 655360,
+    "bytes": 32768
+   },
+   {
+    "size": 128,
+    "offset": 688128,
+    "bytes": 8192
+   },
+   {
+    "size": 64,
+    "offset": 696320,
+    "bytes": 2048
+   },
+   {
+    "size": 32,
+    "offset": 698368,
+    "bytes": 512
+   },
+   {
+    "size": 16,
+    "offset": 698880,
+    "bytes": 128
+   },
+   {
+    "size": 8,
+    "offset": 699008,
+    "bytes": 32
+   },
+   {
+    "size": 4,
+    "offset": 699040,
+    "bytes": 8
+   },
+   {
+    "size": 2,
+    "offset": 699048,
+    "bytes": 8
+   },
+   {
+    "size": 1,
+    "offset": 699056,
+    "bytes": 8
+   }
+  ],
+  "srgb": false
+ },
+ "amethyst/LB_Lid/orm": {
+  "file": "boxtex/amethyst-4.bc1",
+  "size": 1024,
+  "levels": [
+   {
+    "size": 1024,
+    "offset": 0,
+    "bytes": 524288
+   },
+   {
+    "size": 512,
+    "offset": 524288,
+    "bytes": 131072
+   },
+   {
+    "size": 256,
+    "offset": 655360,
+    "bytes": 32768
+   },
+   {
+    "size": 128,
+    "offset": 688128,
+    "bytes": 8192
+   },
+   {
+    "size": 64,
+    "offset": 696320,
+    "bytes": 2048
+   },
+   {
+    "size": 32,
+    "offset": 698368,
+    "bytes": 512
+   },
+   {
+    "size": 16,
+    "offset": 698880,
+    "bytes": 128
+   },
+   {
+    "size": 8,
+    "offset": 699008,
+    "bytes": 32
+   },
+   {
+    "size": 4,
+    "offset": 699040,
+    "bytes": 8
+   },
+   {
+    "size": 2,
+    "offset": 699048,
+    "bytes": 8
+   },
+   {
+    "size": 1,
+    "offset": 699056,
+    "bytes": 8
+   }
+  ],
+  "srgb": false
+ },
+ "amethyst/LB_Box/map": {
+  "file": "boxtex/amethyst-8.bc1",
+  "size": 1024,
+  "levels": [
+   {
+    "size": 1024,
+    "offset": 0,
+    "bytes": 524288
+   },
+   {
+    "size": 512,
+    "offset": 524288,
+    "bytes": 131072
+   },
+   {
+    "size": 256,
+    "offset": 655360,
+    "bytes": 32768
+   },
+   {
+    "size": 128,
+    "offset": 688128,
+    "bytes": 8192
+   },
+   {
+    "size": 64,
+    "offset": 696320,
+    "bytes": 2048
+   },
+   {
+    "size": 32,
+    "offset": 698368,
+    "bytes": 512
+   },
+   {
+    "size": 16,
+    "offset": 698880,
+    "bytes": 128
+   },
+   {
+    "size": 8,
+    "offset": 699008,
+    "bytes": 32
+   },
+   {
+    "size": 4,
+    "offset": 699040,
+    "bytes": 8
+   },
+   {
+    "size": 2,
+    "offset": 699048,
+    "bytes": 8
+   },
+   {
+    "size": 1,
+    "offset": 699056,
+    "bytes": 8
+   }
+  ],
+  "srgb": true
+ },
+ "amethyst/LB_Box/normalMap": {
+  "file": "boxtex/amethyst-6.bc1",
+  "size": 1024,
+  "levels": [
+   {
+    "size": 1024,
+    "offset": 0,
+    "bytes": 524288
+   },
+   {
+    "size": 512,
+    "offset": 524288,
+    "bytes": 131072
+   },
+   {
+    "size": 256,
+    "offset": 655360,
+    "bytes": 32768
+   },
+   {
+    "size": 128,
+    "offset": 688128,
+    "bytes": 8192
+   },
+   {
+    "size": 64,
+    "offset": 696320,
+    "bytes": 2048
+   },
+   {
+    "size": 32,
+    "offset": 698368,
+    "bytes": 512
+   },
+   {
+    "size": 16,
+    "offset": 698880,
+    "bytes": 128
+   },
+   {
+    "size": 8,
+    "offset": 699008,
+    "bytes": 32
+   },
+   {
+    "size": 4,
+    "offset": 699040,
+    "bytes": 8
+   },
+   {
+    "size": 2,
+    "offset": 699048,
+    "bytes": 8
+   },
+   {
+    "size": 1,
+    "offset": 699056,
+    "bytes": 8
+   }
+  ],
+  "srgb": false
+ },
+ "amethyst/LB_Box/orm": {
+  "file": "boxtex/amethyst-7.bc1",
+  "size": 1024,
+  "levels": [
+   {
+    "size": 1024,
+    "offset": 0,
+    "bytes": 524288
+   },
+   {
+    "size": 512,
+    "offset": 524288,
+    "bytes": 131072
+   },
+   {
+    "size": 256,
+    "offset": 655360,
+    "bytes": 32768
+   },
+   {
+    "size": 128,
+    "offset": 688128,
+    "bytes": 8192
+   },
+   {
+    "size": 64,
+    "offset": 696320,
+    "bytes": 2048
+   },
+   {
+    "size": 32,
+    "offset": 698368,
+    "bytes": 512
+   },
+   {
+    "size": 16,
+    "offset": 698880,
+    "bytes": 128
+   },
+   {
+    "size": 8,
+    "offset": 699008,
+    "bytes": 32
+   },
+   {
+    "size": 4,
+    "offset": 699040,
+    "bytes": 8
+   },
+   {
+    "size": 2,
+    "offset": 699048,
+    "bytes": 8
+   },
+   {
+    "size": 1,
+    "offset": 699056,
+    "bytes": 8
+   }
+  ],
+  "srgb": false
+ }
+}

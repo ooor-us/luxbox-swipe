@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex">
+<title>LuxBox Home Swipe</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600&display=swap">
+<style>
+html, body { margin: 0; }
+[hidden] { display: none !important; }
+/* Layout: a viewing room. Controls on the left (top on phones), one phone-sized stage that always fits the screen. */
+:root {
+  color-scheme: dark;
+  --bg: #0e0c0a;          /* lacquer black, warm */
+  --panel: #171410;
+  --line: #2b261f;
+  --fg: #efe7da;          /* ivory */
+  --muted: #b5aa98;
+  --gold: #c9a35c;        /* clasp brass */
+  --gold-ink: #1a140b;
+  --display: "Cormorant Garamond", "Iowan Old Style", Georgia, serif;
+  --body: "DM Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+html, body { height: 100%; }
+body { background: var(--bg); color: var(--fg); font-family: var(--body); font-size: 14px; line-height: 1.45; }
+.app { height: 100%; display: grid; grid-template-columns: minmax(280px, 360px) 1fr; gap: 24px;
+  padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px));
+  padding-block: 20px; box-sizing: border-box; }
+.side { display: flex; flex-direction: column; gap: 22px; min-width: 0; overflow: auto; padding-right: 4px; }
+.eyebrow { font-size: 11px; letter-spacing: .14em; text-transform: uppercase; color: var(--muted); }
+h1 { font-family: var(--display); font-weight: 600; font-size: 34px; line-height: 1.05; margin: 6px 0 8px; text-wrap: balance; }
+.lede { color: var(--muted); margin: 0; max-width: 46ch; }
+.group { display: flex; flex-direction: column; gap: 8px; }
+.label { font-size: 11px; letter-spacing: .12em; text-transform: uppercase; color: var(--muted); }
+.protos { display: flex; flex-direction: column; gap: 6px; }
+.proto { all: unset; box-sizing: border-box; cursor: pointer; display: grid; grid-template-columns: 22px 1fr; gap: 2px 10px;
+  padding: 10px 12px; border-radius: 10px; border: 1px solid transparent; }
+.proto:hover { background: var(--panel); }
+.proto:focus-visible { outline: 2px solid var(--gold); outline-offset: 2px; }
+.proto[aria-selected="true"] { background: var(--panel); border-color: var(--line); }
+.proto .rank { grid-row: span 2; font-variant-numeric: tabular-nums; color: var(--muted); font-size: 12px; padding-top: 3px; }
+.proto[aria-selected="true"] .rank { color: var(--gold); }
+.proto .name { font-family: var(--display); font-size: 21px; font-weight: 600; line-height: 1.1; }
+.proto .idea { color: var(--muted); font-size: 12.5px; }
+.themes { display: flex; flex-wrap: wrap; gap: 8px; }
+.theme { all: unset; box-sizing: border-box; cursor: pointer; display: inline-flex; align-items: center; gap: 8px;
+  padding: 7px 12px 7px 9px; border-radius: 999px; border: 1px solid var(--line); font-size: 13px; }
+.theme:hover { border-color: var(--muted); }
+.theme:focus-visible { outline: 2px solid var(--gold); outline-offset: 2px; }
+.theme[aria-pressed="true"] { background: var(--gold); color: var(--gold-ink); border-color: var(--gold); }
+.theme .dot { width: 12px; height: 12px; border-radius: 50%; box-shadow: 0 0 0 1px rgba(255,255,255,.35) inset; }
+.theme small { color: inherit; opacity: .7; font-size: 11.5px; }
+.note { color: var(--muted); font-size: 12.5px; margin: 0; }
+.note b { color: var(--fg); font-weight: 500; }
+.stage { position: relative; min-width: 0; min-height: 0; display: flex; align-items: center; justify-content: center; }
+.device { position: relative; width: 375px; height: 812px; transform-origin: center center; border-radius: 34px; overflow: hidden;
+  box-shadow: 0 0 0 1px var(--line), 0 30px 80px rgba(0,0,0,.55); background: #000; flex: none; }
+.device iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; display: block; }
+.loading { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; flex-direction: column; gap: 10px;
+  color: var(--muted); font-size: 13px; background: #000; transition: opacity .35s; pointer-events: none; }
+.loading[data-done="1"] { opacity: 0; }
+.spinner { width: 22px; height: 22px; border-radius: 50%; border: 2px solid var(--line); border-top-color: var(--gold); animation: spin 0.9s linear infinite; }
+@keyframes spin { to { transform: rotate(360deg); } }
+@media (prefers-reduced-motion: reduce) { .spinner { animation: none; } }
+/* Phones: controls in two scrolling rows on top, the stage fills the rest. */
+@media (max-width: 760px) {
+  .app { grid-template-columns: 1fr; grid-template-rows: auto 1fr; gap: 10px; padding-block: 10px; }
+  .side { gap: 8px; overflow: visible; padding-right: 0; }
+  .intro, .note, .label { display: none; }
+  .protos { flex-direction: row; overflow-x: auto; gap: 6px; scrollbar-width: none; margin-inline: -4px; padding-inline: 4px; }
+  .protos::-webkit-scrollbar { display: none; }
+  .proto { grid-template-columns: auto auto; padding: 6px 12px; flex: none; border-color: var(--line); border-radius: 999px; align-items: baseline; }
+  .proto .rank { grid-row: auto; padding: 0; }
+  .proto .name { font-family: var(--body); font-size: 13px; font-weight: 500; }
+  .proto .idea { display: none; }
+  .themes { flex-wrap: nowrap; overflow-x: auto; scrollbar-width: none; }
+  .themes::-webkit-scrollbar { display: none; }
+  .theme { flex: none; padding: 5px 10px 5px 7px; font-size: 12.5px; }
+  .theme small { display: none; }
+  .device { border-radius: 22px; }
+}
+</style>
+
+<div class="app">
+  <aside class="side">
+    <div class="intro">
+      <div class="eyebrow">LuxBox · Round 14 · Nov 2026</div>
+      <h1>Home swipe prototypes</h1>
+      <p class="lede">Four ways to move between the home boxes, each giving every box its own room. Drag the box sideways to swipe, or jump to a box below.</p>
+    </div>
+    <div class="group">
+      <div class="label">Prototype · ranked</div>
+      <div class="protos" role="tablist" aria-label="Prototype" id="protos"></div>
+    </div>
+    <div class="group">
+      <div class="label">Box and theme</div>
+      <div class="themes" id="themes" aria-label="Box and theme"></div>
+    </div>
+    <p class="note">Tapping the box never opens it; the swipe-to-open control is a still image. <b>Today</b> is a web replica of the current app carousel for comparison.</p>
+  </aside>
+  <main class="stage" id="stage">
+    <div class="device" id="device">
+      <iframe id="frame" title="Prototype" allow="fullscreen"></iframe>
+      <div class="loading" id="loading"><div class="spinner"></div><span id="loadingText">Loading the room…</span></div>
+    </div>
+  </main>
+</div>
+
+<script>
+const PROTOS = [
+  { id: 'revolving-stage', dir: 'p4-revolving-stage', name: 'Revolving Stage', idea: 'A theatre turntable seen from a fixed seat. Each swipe turns the stage a quarter under one spotlight.' },
+  { id: 'rotunda', dir: 'p2-rotunda', name: 'Rotunda', idea: 'A round room. The camera turns, and every box waits in its own lit niche.' },
+  { id: 'window-light', dir: 'p1-window-light', name: 'Window Light', idea: 'One room and one window. The sunlight and the hour move with your finger.' },
+  { id: 'enfilade', dir: 'p3-enfilade', name: 'Enfilade', idea: 'Four rooms in a row. The camera slides sideways past stone piers.' },
+  { id: 'today', dir: 'baseline', name: 'Today', idea: 'The current app carousel, rebuilt for the web as the comparison.' },
+];
+const STOPS = [
+  { name: 'Obsidian', theme: 'Ivory Morning', hex: '#1A1A1C' },
+  { name: 'Sapphire', theme: 'Reeded Glass', hex: '#1C2A47' },
+  { name: 'Emerald', theme: 'Riviera', hex: '#1E3B31' },
+  { name: 'Amethyst', theme: 'Desert Dawn', hex: '#3B2A42' },
+];
+const $ = (id) => document.getElementById(id);
+const frame = $('frame'), device = $('device'), stage = $('stage'), loading = $('loading');
+let current = null, tween = 0;
+
+PROTOS.forEach((p, i) => {
+  const b = document.createElement('button');
+  b.className = 'proto'; b.id = 'tab-' + p.id; b.setAttribute('role', 'tab'); b.dataset.id = p.id;
+  b.innerHTML = `<span class="rank">${p.id === 'today' ? '—' : i + 1}</span><span class="name">${p.name}</span><span class="idea">${p.idea}</span>`;
+  b.addEventListener('click', () => { if (location.hash !== '#' + p.id) location.hash = p.id; else show(p.id); });
+  $('protos').appendChild(b);
+});
+STOPS.forEach((s, k) => {
+  const b = document.createElement('button');
+  b.className = 'theme'; b.id = 'theme-' + k; b.setAttribute('aria-pressed', k === 0 ? 'true' : 'false');
+  b.innerHTML = `<span class="dot" style="background:${s.hex}"></span>${s.name}<small>${s.theme}</small>`;
+  b.addEventListener('click', () => goTo(k));
+  $('themes').appendChild(b);
+});
+
+// The prototype's API, but only once the frame holds the page that was asked for (not the previous one still unloading).
+function proto() {
+  try {
+    const p = PROTOS.find((x) => x.id === current), w = frame.contentWindow;
+    if (!p || !w || w.location.pathname.indexOf('/' + p.dir + '/') < 0) return null;
+    return w.__proto || null;
+  } catch (e) { return null; }
+}
+
+function show(id) {
+  const p = PROTOS.find((x) => x.id === id) || PROTOS[0];
+  document.querySelectorAll('.proto').forEach((b) => b.setAttribute('aria-selected', b.dataset.id === p.id ? 'true' : 'false'));
+  if (current === p.id) return;
+  current = p.id;
+  loading.dataset.done = '0'; $('loadingText').textContent = 'Loading ' + p.name + '…';
+  cancelAnimationFrame(tween);
+  frame.src = p.dir + '/index.html';
+  const el = $('tab-' + p.id); if (el && el.scrollIntoView) el.scrollIntoView({ block: 'nearest', inline: 'nearest' });
+}
+
+// Glide to a box: drive the prototype's own position (the same state a drag produces), then hand control back.
+function goTo(k) {
+  const api = proto(); if (!api || !api.ready) return;
+  const from = api.getPosition();
+  const m = ((Math.round(from) % 4) + 4) % 4;
+  let d = k - m; if (d > 2) d -= 4; if (d < -2) d += 4;
+  const to = Math.round(from) + d;
+  if (Math.abs(to - from) < 1e-3) return;
+  const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const dur = reduce ? 1 : 520 + 260 * Math.abs(to - from);
+  const t0 = performance.now();
+  cancelAnimationFrame(tween);
+  const step = (now) => {
+    const t = Math.min(1, (now - t0) / dur), e = t < .5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2;
+    try { api.setPosition(from + (to - from) * e); } catch (err) { return; }
+    if (t < 1) tween = requestAnimationFrame(step);
+    else {
+      try { api.freeze(false); } catch (err) {}
+      // A page still uploading textures can drop the jump; check once and land it if so.
+      setTimeout(() => { const a = proto(); if (a === api && Math.abs(a.getPosition() - to) > 0.05 && !a.reducedMotion) { try { a.setPosition(to); a.freeze(false); } catch (err) {} } }, 400);
+    }
+  };
+  tween = requestAnimationFrame(step);
+}
+
+// Keep the theme buttons in step with swipes made inside the prototype, and hide the loader when it is ready.
+setInterval(() => {
+  const api = proto(); if (!api) return;
+  if (api.ready) loading.dataset.done = '1';
+  const s = ((Math.round(api.getPosition()) % 4) + 4) % 4;
+  document.querySelectorAll('.theme').forEach((b, k) => b.setAttribute('aria-pressed', k === s ? 'true' : 'false'));
+}, 150);
+
+function fit() {
+  const r = stage.getBoundingClientRect();
+  const k = Math.min(1.25, r.width / 375, r.height / 812);
+  device.style.transform = `scale(${k})`;
+  device.style.margin = `${(812 * k - 812) / 2}px ${(375 * k - 375) / 2}px`;
+}
+new ResizeObserver(fit).observe(stage); fit();
+
+const route = () => show((location.hash || '').slice(1) || PROTOS[0].id);
+addEventListener('hashchange', route); route();
+</script>
+
+</html>

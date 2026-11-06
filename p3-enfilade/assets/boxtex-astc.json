@@ -1,0 +1,1955 @@
+{
+ "obsidian/LB_Lid_Pad/map": {
+  "file": "boxtex-astc/obsidian-2.astc",
+  "size": 1024,
+  "block": 5,
+  "levels": [
+   {
+    "size": 1024,
+    "offset": 0,
+    "bytes": 672400
+   },
+   {
+    "size": 512,
+    "offset": 672400,
+    "bytes": 169744
+   },
+   {
+    "size": 256,
+    "offset": 842144,
+    "bytes": 43264
+   },
+   {
+    "size": 128,
+    "offset": 885408,
+    "bytes": 10816
+   },
+   {
+    "size": 64,
+    "offset": 896224,
+    "bytes": 2704
+   },
+   {
+    "size": 32,
+    "offset": 898928,
+    "bytes": 784
+   },
+   {
+    "size": 16,
+    "offset": 899712,
+    "bytes": 256
+   },
+   {
+    "size": 8,
+    "offset": 899968,
+    "bytes": 64
+   },
+   {
+    "size": 4,
+    "offset": 900032,
+    "bytes": 16
+   },
+   {
+    "size": 2,
+    "offset": 900048,
+    "bytes": 16
+   },
+   {
+    "size": 1,
+    "offset": 900064,
+    "bytes": 16
+   }
+  ],
+  "srgb": true
+ },
+ "obsidian/LB_Lid_Pad/normalMap": {
+  "file": "boxtex-astc/obsidian-0.astc",
+  "size": 1024,
+  "block": 5,
+  "levels": [
+   {
+    "size": 1024,
+    "offset": 0,
+    "bytes": 672400
+   },
+   {
+    "size": 512,
+    "offset": 672400,
+    "bytes": 169744
+   },
+   {
+    "size": 256,
+    "offset": 842144,
+    "bytes": 43264
+   },
+   {
+    "size": 128,
+    "offset": 885408,
+    "bytes": 10816
+   },
+   {
+    "size": 64,
+    "offset": 896224,
+    "bytes": 2704
+   },
+   {
+    "size": 32,
+    "offset": 898928,
+    "bytes": 784
+   },
+   {
+    "size": 16,
+    "offset": 899712,
+    "bytes": 256
+   },
+   {
+    "size": 8,
+    "offset": 899968,
+    "bytes": 64
+   },
+   {
+    "size": 4,
+    "offset": 900032,
+    "bytes": 16
+   },
+   {
+    "size": 2,
+    "offset": 900048,
+    "bytes": 16
+   },
+   {
+    "size": 1,
+    "offset": 900064,
+    "bytes": 16
+   }
+  ],
+  "srgb": false
+ },
+ "obsidian/LB_Lid_Pad/orm": {
+  "file": "boxtex-astc/obsidian-1.astc",
+  "size": 1024,
+  "block": 5,
+  "levels": [
+   {
+    "size": 1024,
+    "offset": 0,
+    "bytes": 672400
+   },
+   {
+    "size": 512,
+    "offset": 672400,
+    "bytes": 169744
+   },
+   {
+    "size": 256,
+    "offset": 842144,
+    "bytes": 43264
+   },
+   {
+    "size": 128,
+    "offset": 885408,
+    "bytes": 10816
+   },
+   {
+    "size": 64,
+    "offset": 896224,
+    "bytes": 2704
+   },
+   {
+    "size": 32,
+    "offset": 898928,
+    "bytes": 784
+   },
+   {
+    "size": 16,
+    "offset": 899712,
+    "bytes": 256
+   },
+   {
+    "size": 8,
+    "offset": 899968,
+    "bytes": 64
+   },
+   {
+    "size": 4,
+    "offset": 900032,
+    "bytes": 16
+   },
+   {
+    "size": 2,
+    "offset": 900048,
+    "bytes": 16
+   },
+   {
+    "size": 1,
+    "offset": 900064,
+    "bytes": 16
+   }
+  ],
+  "srgb": false
+ },
+ "obsidian/LB_Lid/map": {
+  "file": "boxtex-astc/obsidian-5.astc",
+  "size": 1024,
+  "block": 5,
+  "levels": [
+   {
+    "size": 1024,
+    "offset": 0,
+    "bytes": 672400
+   },
+   {
+    "size": 512,
+    "offset": 672400,
+    "bytes": 169744
+   },
+   {
+    "size": 256,
+    "offset": 842144,
+    "bytes": 43264
+   },
+   {
+    "size": 128,
+    "offset": 885408,
+    "bytes": 10816
+   },
+   {
+    "size": 64,
+    "offset": 896224,
+    "bytes": 2704
+   },
+   {
+    "size": 32,
+    "offset": 898928,
+    "bytes": 784
+   },
+   {
+    "size": 16,
+    "offset": 899712,
+    "bytes": 256
+   },
+   {
+    "size": 8,
+    "offset": 899968,
+    "bytes": 64
+   },
+   {
+    "size": 4,
+    "offset": 900032,
+    "bytes": 16
+   },
+   {
+    "size": 2,
+    "offset": 900048,
+    "bytes": 16
+   },
+   {
+    "size": 1,
+    "offset": 900064,
+    "bytes": 16
+   }
+  ],
+  "srgb": true
+ },
+ "obsidian/LB_Lid/normalMap": {
+  "file": "boxtex-astc/obsidian-3.astc",
+  "size": 1024,
+  "block": 5,
+  "levels": [
+   {
+    "size": 1024,
+    "offset": 0,
+    "bytes": 672400
+   },
+   {
+    "size": 512,
+    "offset": 672400,
+    "bytes": 169744
+   },
+   {
+    "size": 256,
+    "offset": 842144,
+    "bytes": 43264
+   },
+   {
+    "size": 128,
+    "offset": 885408,
+    "bytes": 10816
+   },
+   {
+    "size": 64,
+    "offset": 896224,
+    "bytes": 2704
+   },
+   {
+    "size": 32,
+    "offset": 898928,
+    "bytes": 784
+   },
+   {
+    "size": 16,
+    "offset": 899712,
+    "bytes": 256
+   },
+   {
+    "size": 8,
+    "offset": 899968,
+    "bytes": 64
+   },
+   {
+    "size": 4,
+    "offset": 900032,
+    "bytes": 16
+   },
+   {
+    "size": 2,
+    "offset": 900048,
+    "bytes": 16
+   },
+   {
+    "size": 1,
+    "offset": 900064,
+    "bytes": 16
+   }
+  ],
+  "srgb": false
+ },
+ "obsidian/LB_Lid/orm": {
+  "file": "boxtex-astc/obsidian-4.astc",
+  "size": 1024,
+  "block": 5,
+  "levels": [
+   {
+    "size": 1024,
+    "offset": 0,
+    "bytes": 672400
+   },
+   {
+    "size": 512,
+    "offset": 672400,
+    "bytes": 169744
+   },
+   {
+    "size": 256,
+    "offset": 842144,
+    "bytes": 43264
+   },
+   {
+    "size": 128,
+    "offset": 885408,
+    "bytes": 10816
+   },
+   {
+    "size": 64,
+    "offset": 896224,
+    "bytes": 2704
+   },
+   {
+    "size": 32,
+    "offset": 898928,
+    "bytes": 784
+   },
+   {
+    "size": 16,
+    "offset": 899712,
+    "bytes": 256
+   },
+   {
+    "size": 8,
+    "offset": 899968,
+    "bytes": 64
+   },
+   {
+    "size": 4,
+    "offset": 900032,
+    "bytes": 16
+   },
+   {
+    "size": 2,
+    "offset": 900048,
+    "bytes": 16
+   },
+   {
+    "size": 1,
+    "offset": 900064,
+    "bytes": 16
+   }
+  ],
+  "srgb": false
+ },
+ "obsidian/LB_Box/map": {
+  "file": "boxtex-astc/obsidian-8.astc",
+  "size": 1024,
+  "block": 5,
+  "levels": [
+   {
+    "size": 1024,
+    "offset": 0,
+    "bytes": 672400
+   },
+   {
+    "size": 512,
+    "offset": 672400,
+    "bytes": 169744
+   },
+   {
+    "size": 256,
+    "offset": 842144,
+    "bytes": 43264
+   },
+   {
+    "size": 128,
+    "offset": 885408,
+    "bytes": 10816
+   },
+   {
+    "size": 64,
+    "offset": 896224,
+    "bytes": 2704
+   },
+   {
+    "size": 32,
+    "offset": 898928,
+    "bytes": 784
+   },
+   {
+    "size": 16,
+    "offset": 899712,
+    "bytes": 256
+   },
+   {
+    "size": 8,
+    "offset": 899968,
+    "bytes": 64
+   },
+   {
+    "size": 4,
+    "offset": 900032,
+    "bytes": 16
+   },
+   {
+    "size": 2,
+    "offset": 900048,
+    "bytes": 16
+   },
+   {
+    "size": 1,
+    "offset": 900064,
+    "bytes": 16
+   }
+  ],
+  "srgb": true
+ },
+ "obsidian/LB_Box/normalMap": {
+  "file": "boxtex-astc/obsidian-6.astc",
+  "size": 1024,
+  "block": 5,
+  "levels": [
+   {
+    "size": 1024,
+    "offset": 0,
+    "bytes": 672400
+   },
+   {
+    "size": 512,
+    "offset": 672400,
+    "bytes": 169744
+   },
+   {
+    "size": 256,
+    "offset": 842144,
+    "bytes": 43264
+   },
+   {
+    "size": 128,
+    "offset": 885408,
+    "bytes": 10816
+   },
+   {
+    "size": 64,
+    "offset": 896224,
+    "bytes": 2704
+   },
+   {
+    "size": 32,
+    "offset": 898928,
+    "bytes": 784
+   },
+   {
+    "size": 16,
+    "offset": 899712,
+    "bytes": 256
+   },
+   {
+    "size": 8,
+    "offset": 899968,
+    "bytes": 64
+   },
+   {
+    "size": 4,
+    "offset": 900032,
+    "bytes": 16
+   },
+   {
+    "size": 2,
+    "offset": 900048,
+    "bytes": 16
+   },
+   {
+    "size": 1,
+    "offset": 900064,
+    "bytes": 16
+   }
+  ],
+  "srgb": false
+ },
+ "obsidian/LB_Box/orm": {
+  "file": "boxtex-astc/obsidian-7.astc",
+  "size": 1024,
+  "block": 5,
+  "levels": [
+   {
+    "size": 1024,
+    "offset": 0,
+    "bytes": 672400
+   },
+   {
+    "size": 512,
+    "offset": 672400,
+    "bytes": 169744
+   },
+   {
+    "size": 256,
+    "offset": 842144,
+    "bytes": 43264
+   },
+   {
+    "size": 128,
+    "offset": 885408,
+    "bytes": 10816
+   },
+   {
+    "size": 64,
+    "offset": 896224,
+    "bytes": 2704
+   },
+   {
+    "size": 32,
+    "offset": 898928,
+    "bytes": 784
+   },
+   {
+    "size": 16,
+    "offset": 899712,
+    "bytes": 256
+   },
+   {
+    "size": 8,
+    "offset": 899968,
+    "bytes": 64
+   },
+   {
+    "size": 4,
+    "offset": 900032,
+    "bytes": 16
+   },
+   {
+    "size": 2,
+    "offset": 900048,
+    "bytes": 16
+   },
+   {
+    "size": 1,
+    "offset": 900064,
+    "bytes": 16
+   }
+  ],
+  "srgb": false
+ },
+ "sapphire/LB_Lid_Pad/map": {
+  "file": "boxtex-astc/sapphire-2.astc",
+  "size": 1024,
+  "block": 5,
+  "levels": [
+   {
+    "size": 1024,
+    "offset": 0,
+    "bytes": 672400
+   },
+   {
+    "size": 512,
+    "offset": 672400,
+    "bytes": 169744
+   },
+   {
+    "size": 256,
+    "offset": 842144,
+    "bytes": 43264
+   },
+   {
+    "size": 128,
+    "offset": 885408,
+    "bytes": 10816
+   },
+   {
+    "size": 64,
+    "offset": 896224,
+    "bytes": 2704
+   },
+   {
+    "size": 32,
+    "offset": 898928,
+    "bytes": 784
+   },
+   {
+    "size": 16,
+    "offset": 899712,
+    "bytes": 256
+   },
+   {
+    "size": 8,
+    "offset": 899968,
+    "bytes": 64
+   },
+   {
+    "size": 4,
+    "offset": 900032,
+    "bytes": 16
+   },
+   {
+    "size": 2,
+    "offset": 900048,
+    "bytes": 16
+   },
+   {
+    "size": 1,
+    "offset": 900064,
+    "bytes": 16
+   }
+  ],
+  "srgb": true
+ },
+ "sapphire/LB_Lid_Pad/normalMap": {
+  "file": "boxtex-astc/sapphire-0.astc",
+  "size": 1024,
+  "block": 5,
+  "levels": [
+   {
+    "size": 1024,
+    "offset": 0,
+    "bytes": 672400
+   },
+   {
+    "size": 512,
+    "offset": 672400,
+    "bytes": 169744
+   },
+   {
+    "size": 256,
+    "offset": 842144,
+    "bytes": 43264
+   },
+   {
+    "size": 128,
+    "offset": 885408,
+    "bytes": 10816
+   },
+   {
+    "size": 64,
+    "offset": 896224,
+    "bytes": 2704
+   },
+   {
+    "size": 32,
+    "offset": 898928,
+    "bytes": 784
+   },
+   {
+    "size": 16,
+    "offset": 899712,
+    "bytes": 256
+   },
+   {
+    "size": 8,
+    "offset": 899968,
+    "bytes": 64
+   },
+   {
+    "size": 4,
+    "offset": 900032,
+    "bytes": 16
+   },
+   {
+    "size": 2,
+    "offset": 900048,
+    "bytes": 16
+   },
+   {
+    "size": 1,
+    "offset": 900064,
+    "bytes": 16
+   }
+  ],
+  "srgb": false
+ },
+ "sapphire/LB_Lid_Pad/orm": {
+  "file": "boxtex-astc/sapphire-1.astc",
+  "size": 1024,
+  "block": 5,
+  "levels": [
+   {
+    "size": 1024,
+    "offset": 0,
+    "bytes": 672400
+   },
+   {
+    "size": 512,
+    "offset": 672400,
+    "bytes": 169744
+   },
+   {
+    "size": 256,
+    "offset": 842144,
+    "bytes": 43264
+   },
+   {
+    "size": 128,
+    "offset": 885408,
+    "bytes": 10816
+   },
+   {
+    "size": 64,
+    "offset": 896224,
+    "bytes": 2704
+   },
+   {
+    "size": 32,
+    "offset": 898928,
+    "bytes": 784
+   },
+   {
+    "size": 16,
+    "offset": 899712,
+    "bytes": 256
+   },
+   {
+    "size": 8,
+    "offset": 899968,
+    "bytes": 64
+   },
+   {
+    "size": 4,
+    "offset": 900032,
+    "bytes": 16
+   },
+   {
+    "size": 2,
+    "offset": 900048,
+    "bytes": 16
+   },
+   {
+    "size": 1,
+    "offset": 900064,
+    "bytes": 16
+   }
+  ],
+  "srgb": false
+ },
+ "sapphire/LB_Lid/map": {
+  "file": "boxtex-astc/sapphire-5.astc",
+  "size": 1024,
+  "block": 5,
+  "levels": [
+   {
+    "size": 1024,
+    "offset": 0,
+    "bytes": 672400
+   },
+   {
+    "size": 512,
+    "offset": 672400,
+    "bytes": 169744
+   },
+   {
+    "size": 256,
+    "offset": 842144,
+    "bytes": 43264
+   },
+   {
+    "size": 128,
+    "offset": 885408,
+    "bytes": 10816
+   },
+   {
+    "size": 64,
+    "offset": 896224,
+    "bytes": 2704
+   },
+   {
+    "size": 32,
+    "offset": 898928,
+    "bytes": 784
+   },
+   {
+    "size": 16,
+    "offset": 899712,
+    "bytes": 256
+   },
+   {
+    "size": 8,
+    "offset": 899968,
+    "bytes": 64
+   },
+   {
+    "size": 4,
+    "offset": 900032,
+    "bytes": 16
+   },
+   {
+    "size": 2,
+    "offset": 900048,
+    "bytes": 16
+   },
+   {
+    "size": 1,
+    "offset": 900064,
+    "bytes": 16
+   }
+  ],
+  "srgb": true
+ },
+ "sapphire/LB_Lid/normalMap": {
+  "file": "boxtex-astc/sapphire-3.astc",
+  "size": 1024,
+  "block": 5,
+  "levels": [
+   {
+    "size": 1024,
+    "offset": 0,
+    "bytes": 672400
+   },
+   {
+    "size": 512,
+    "offset": 672400,
+    "bytes": 169744
+   },
+   {
+    "size": 256,
+    "offset": 842144,
+    "bytes": 43264
+   },
+   {
+    "size": 128,
+    "offset": 885408,
+    "bytes": 10816
+   },
+   {
+    "size": 64,
+    "offset": 896224,
+    "bytes": 2704
+   },
+   {
+    "size": 32,
+    "offset": 898928,
+    "bytes": 784
+   },
+   {
+    "size": 16,
+    "offset": 899712,
+    "bytes": 256
+   },
+   {
+    "size": 8,
+    "offset": 899968,
+    "bytes": 64
+   },
+   {
+    "size": 4,
+    "offset": 900032,
+    "bytes": 16
+   },
+   {
+    "size": 2,
+    "offset": 900048,
+    "bytes": 16
+   },
+   {
+    "size": 1,
+    "offset": 900064,
+    "bytes": 16
+   }
+  ],
+  "srgb": false
+ },
+ "sapphire/LB_Lid/orm": {
+  "file": "boxtex-astc/sapphire-4.astc",
+  "size": 1024,
+  "block": 5,
+  "levels": [
+   {
+    "size": 1024,
+    "offset": 0,
+    "bytes": 672400
+   },
+   {
+    "size": 512,
+    "offset": 672400,
+    "bytes": 169744
+   },
+   {
+    "size": 256,
+    "offset": 842144,
+    "bytes": 43264
+   },
+   {
+    "size": 128,
+    "offset": 885408,
+    "bytes": 10816
+   },
+   {
+    "size": 64,
+    "offset": 896224,
+    "bytes": 2704
+   },
+   {
+    "size": 32,
+    "offset": 898928,
+    "bytes": 784
+   },
+   {
+    "size": 16,
+    "offset": 899712,
+    "bytes": 256
+   },
+   {
+    "size": 8,
+    "offset": 899968,
+    "bytes": 64
+   },
+   {
+    "size": 4,
+    "offset": 900032,
+    "bytes": 16
+   },
+   {
+    "size": 2,
+    "offset": 900048,
+    "bytes": 16
+   },
+   {
+    "size": 1,
+    "offset": 900064,
+    "bytes": 16
+   }
+  ],
+  "srgb": false
+ },
+ "sapphire/LB_Box/map": {
+  "file": "boxtex-astc/sapphire-8.astc",
+  "size": 1024,
+  "block": 5,
+  "levels": [
+   {
+    "size": 1024,
+    "offset": 0,
+    "bytes": 672400
+   },
+   {
+    "size": 512,
+    "offset": 672400,
+    "bytes": 169744
+   },
+   {
+    "size": 256,
+    "offset": 842144,
+    "bytes": 43264
+   },
+   {
+    "size": 128,
+    "offset": 885408,
+    "bytes": 10816
+   },
+   {
+    "size": 64,
+    "offset": 896224,
+    "bytes": 2704
+   },
+   {
+    "size": 32,
+    "offset": 898928,
+    "bytes": 784
+   },
+   {
+    "size": 16,
+    "offset": 899712,
+    "bytes": 256
+   },
+   {
+    "size": 8,
+    "offset": 899968,
+    "bytes": 64
+   },
+   {
+    "size": 4,
+    "offset": 900032,
+    "bytes": 16
+   },
+   {
+    "size": 2,
+    "offset": 900048,
+    "bytes": 16
+   },
+   {
+    "size": 1,
+    "offset": 900064,
+    "bytes": 16
+   }
+  ],
+  "srgb": true
+ },
+ "sapphire/LB_Box/normalMap": {
+  "file": "boxtex-astc/sapphire-6.astc",
+  "size": 1024,
+  "block": 5,
+  "levels": [
+   {
+    "size": 1024,
+    "offset": 0,
+    "bytes": 672400
+   },
+   {
+    "size": 512,
+    "offset": 672400,
+    "bytes": 169744
+   },
+   {
+    "size": 256,
+    "offset": 842144,
+    "bytes": 43264
+   },
+   {
+    "size": 128,
+    "offset": 885408,
+    "bytes": 10816
+   },
+   {
+    "size": 64,
+    "offset": 896224,
+    "bytes": 2704
+   },
+   {
+    "size": 32,
+    "offset": 898928,
+    "bytes": 784
+   },
+   {
+    "size": 16,
+    "offset": 899712,
+    "bytes": 256
+   },
+   {
+    "size": 8,
+    "offset": 899968,
+    "bytes": 64
+   },
+   {
+    "size": 4,
+    "offset": 900032,
+    "bytes": 16
+   },
+   {
+    "size": 2,
+    "offset": 900048,
+    "bytes": 16
+   },
+   {
+    "size": 1,
+    "offset": 900064,
+    "bytes": 16
+   }
+  ],
+  "srgb": false
+ },
+ "sapphire/LB_Box/orm": {
+  "file": "boxtex-astc/sapphire-7.astc",
+  "size": 1024,
+  "block": 5,
+  "levels": [
+   {
+    "size": 1024,
+    "offset": 0,
+    "bytes": 672400
+   },
+   {
+    "size": 512,
+    "offset": 672400,
+    "bytes": 169744
+   },
+   {
+    "size": 256,
+    "offset": 842144,
+    "bytes": 43264
+   },
+   {
+    "size": 128,
+    "offset": 885408,
+    "bytes": 10816
+   },
+   {
+    "size": 64,
+    "offset": 896224,
+    "bytes": 2704
+   },
+   {
+    "size": 32,
+    "offset": 898928,
+    "bytes": 784
+   },
+   {
+    "size": 16,
+    "offset": 899712,
+    "bytes": 256
+   },
+   {
+    "size": 8,
+    "offset": 899968,
+    "bytes": 64
+   },
+   {
+    "size": 4,
+    "offset": 900032,
+    "bytes": 16
+   },
+   {
+    "size": 2,
+    "offset": 900048,
+    "bytes": 16
+   },
+   {
+    "size": 1,
+    "offset": 900064,
+    "bytes": 16
+   }
+  ],
+  "srgb": false
+ },
+ "emerald/LB_Lid/map": {
+  "file": "boxtex-astc/emerald-1.astc",
+  "size": 1024,
+  "block": 5,
+  "levels": [
+   {
+    "size": 1024,
+    "offset": 0,
+    "bytes": 672400
+   },
+   {
+    "size": 512,
+    "offset": 672400,
+    "bytes": 169744
+   },
+   {
+    "size": 256,
+    "offset": 842144,
+    "bytes": 43264
+   },
+   {
+    "size": 128,
+    "offset": 885408,
+    "bytes": 10816
+   },
+   {
+    "size": 64,
+    "offset": 896224,
+    "bytes": 2704
+   },
+   {
+    "size": 32,
+    "offset": 898928,
+    "bytes": 784
+   },
+   {
+    "size": 16,
+    "offset": 899712,
+    "bytes": 256
+   },
+   {
+    "size": 8,
+    "offset": 899968,
+    "bytes": 64
+   },
+   {
+    "size": 4,
+    "offset": 900032,
+    "bytes": 16
+   },
+   {
+    "size": 2,
+    "offset": 900048,
+    "bytes": 16
+   },
+   {
+    "size": 1,
+    "offset": 900064,
+    "bytes": 16
+   }
+  ],
+  "srgb": true
+ },
+ "emerald/LB_Lid/orm": {
+  "file": "boxtex-astc/emerald-0.astc",
+  "size": 1024,
+  "block": 5,
+  "levels": [
+   {
+    "size": 1024,
+    "offset": 0,
+    "bytes": 672400
+   },
+   {
+    "size": 512,
+    "offset": 672400,
+    "bytes": 169744
+   },
+   {
+    "size": 256,
+    "offset": 842144,
+    "bytes": 43264
+   },
+   {
+    "size": 128,
+    "offset": 885408,
+    "bytes": 10816
+   },
+   {
+    "size": 64,
+    "offset": 896224,
+    "bytes": 2704
+   },
+   {
+    "size": 32,
+    "offset": 898928,
+    "bytes": 784
+   },
+   {
+    "size": 16,
+    "offset": 899712,
+    "bytes": 256
+   },
+   {
+    "size": 8,
+    "offset": 899968,
+    "bytes": 64
+   },
+   {
+    "size": 4,
+    "offset": 900032,
+    "bytes": 16
+   },
+   {
+    "size": 2,
+    "offset": 900048,
+    "bytes": 16
+   },
+   {
+    "size": 1,
+    "offset": 900064,
+    "bytes": 16
+   }
+  ],
+  "srgb": false
+ },
+ "emerald/LB_Box/map": {
+  "file": "boxtex-astc/emerald-3.astc",
+  "size": 1024,
+  "block": 5,
+  "levels": [
+   {
+    "size": 1024,
+    "offset": 0,
+    "bytes": 672400
+   },
+   {
+    "size": 512,
+    "offset": 672400,
+    "bytes": 169744
+   },
+   {
+    "size": 256,
+    "offset": 842144,
+    "bytes": 43264
+   },
+   {
+    "size": 128,
+    "offset": 885408,
+    "bytes": 10816
+   },
+   {
+    "size": 64,
+    "offset": 896224,
+    "bytes": 2704
+   },
+   {
+    "size": 32,
+    "offset": 898928,
+    "bytes": 784
+   },
+   {
+    "size": 16,
+    "offset": 899712,
+    "bytes": 256
+   },
+   {
+    "size": 8,
+    "offset": 899968,
+    "bytes": 64
+   },
+   {
+    "size": 4,
+    "offset": 900032,
+    "bytes": 16
+   },
+   {
+    "size": 2,
+    "offset": 900048,
+    "bytes": 16
+   },
+   {
+    "size": 1,
+    "offset": 900064,
+    "bytes": 16
+   }
+  ],
+  "srgb": true
+ },
+ "emerald/LB_Box/orm": {
+  "file": "boxtex-astc/emerald-2.astc",
+  "size": 1024,
+  "block": 5,
+  "levels": [
+   {
+    "size": 1024,
+    "offset": 0,
+    "bytes": 672400
+   },
+   {
+    "size": 512,
+    "offset": 672400,
+    "bytes": 169744
+   },
+   {
+    "size": 256,
+    "offset": 842144,
+    "bytes": 43264
+   },
+   {
+    "size": 128,
+    "offset": 885408,
+    "bytes": 10816
+   },
+   {
+    "size": 64,
+    "offset": 896224,
+    "bytes": 2704
+   },
+   {
+    "size": 32,
+    "offset": 898928,
+    "bytes": 784
+   },
+   {
+    "size": 16,
+    "offset": 899712,
+    "bytes": 256
+   },
+   {
+    "size": 8,
+    "offset": 899968,
+    "bytes": 64
+   },
+   {
+    "size": 4,
+    "offset": 900032,
+    "bytes": 16
+   },
+   {
+    "size": 2,
+    "offset": 900048,
+    "bytes": 16
+   },
+   {
+    "size": 1,
+    "offset": 900064,
+    "bytes": 16
+   }
+  ],
+  "srgb": false
+ },
+ "amethyst/LB_Lid_Pad/map": {
+  "file": "boxtex-astc/amethyst-2.astc",
+  "size": 1024,
+  "block": 5,
+  "levels": [
+   {
+    "size": 1024,
+    "offset": 0,
+    "bytes": 672400
+   },
+   {
+    "size": 512,
+    "offset": 672400,
+    "bytes": 169744
+   },
+   {
+    "size": 256,
+    "offset": 842144,
+    "bytes": 43264
+   },
+   {
+    "size": 128,
+    "offset": 885408,
+    "bytes": 10816
+   },
+   {
+    "size": 64,
+    "offset": 896224,
+    "bytes": 2704
+   },
+   {
+    "size": 32,
+    "offset": 898928,
+    "bytes": 784
+   },
+   {
+    "size": 16,
+    "offset": 899712,
+    "bytes": 256
+   },
+   {
+    "size": 8,
+    "offset": 899968,
+    "bytes": 64
+   },
+   {
+    "size": 4,
+    "offset": 900032,
+    "bytes": 16
+   },
+   {
+    "size": 2,
+    "offset": 900048,
+    "bytes": 16
+   },
+   {
+    "size": 1,
+    "offset": 900064,
+    "bytes": 16
+   }
+  ],
+  "srgb": true
+ },
+ "amethyst/LB_Lid_Pad/normalMap": {
+  "file": "boxtex-astc/amethyst-0.astc",
+  "size": 1024,
+  "block": 5,
+  "levels": [
+   {
+    "size": 1024,
+    "offset": 0,
+    "bytes": 672400
+   },
+   {
+    "size": 512,
+    "offset": 672400,
+    "bytes": 169744
+   },
+   {
+    "size": 256,
+    "offset": 842144,
+    "bytes": 43264
+   },
+   {
+    "size": 128,
+    "offset": 885408,
+    "bytes": 10816
+   },
+   {
+    "size": 64,
+    "offset": 896224,
+    "bytes": 2704
+   },
+   {
+    "size": 32,
+    "offset": 898928,
+    "bytes": 784
+   },
+   {
+    "size": 16,
+    "offset": 899712,
+    "bytes": 256
+   },
+   {
+    "size": 8,
+    "offset": 899968,
+    "bytes": 64
+   },
+   {
+    "size": 4,
+    "offset": 900032,
+    "bytes": 16
+   },
+   {
+    "size": 2,
+    "offset": 900048,
+    "bytes": 16
+   },
+   {
+    "size": 1,
+    "offset": 900064,
+    "bytes": 16
+   }
+  ],
+  "srgb": false
+ },
+ "amethyst/LB_Lid_Pad/orm": {
+  "file": "boxtex-astc/amethyst-1.astc",
+  "size": 1024,
+  "block": 5,
+  "levels": [
+   {
+    "size": 1024,
+    "offset": 0,
+    "bytes": 672400
+   },
+   {
+    "size": 512,
+    "offset": 672400,
+    "bytes": 169744
+   },
+   {
+    "size": 256,
+    "offset": 842144,
+    "bytes": 43264
+   },
+   {
+    "size": 128,
+    "offset": 885408,
+    "bytes": 10816
+   },
+   {
+    "size": 64,
+    "offset": 896224,
+    "bytes": 2704
+   },
+   {
+    "size": 32,
+    "offset": 898928,
+    "bytes": 784
+   },
+   {
+    "size": 16,
+    "offset": 899712,
+    "bytes": 256
+   },
+   {
+    "size": 8,
+    "offset": 899968,
+    "bytes": 64
+   },
+   {
+    "size": 4,
+    "offset": 900032,
+    "bytes": 16
+   },
+   {
+    "size": 2,
+    "offset": 900048,
+    "bytes": 16
+   },
+   {
+    "size": 1,
+    "offset": 900064,
+    "bytes": 16
+   }
+  ],
+  "srgb": false
+ },
+ "amethyst/LB_Lid/map": {
+  "file": "boxtex-astc/amethyst-5.astc",
+  "size": 1024,
+  "block": 5,
+  "levels": [
+   {
+    "size": 1024,
+    "offset": 0,
+    "bytes": 672400
+   },
+   {
+    "size": 512,
+    "offset": 672400,
+    "bytes": 169744
+   },
+   {
+    "size": 256,
+    "offset": 842144,
+    "bytes": 43264
+   },
+   {
+    "size": 128,
+    "offset": 885408,
+    "bytes": 10816
+   },
+   {
+    "size": 64,
+    "offset": 896224,
+    "bytes": 2704
+   },
+   {
+    "size": 32,
+    "offset": 898928,
+    "bytes": 784
+   },
+   {
+    "size": 16,
+    "offset": 899712,
+    "bytes": 256
+   },
+   {
+    "size": 8,
+    "offset": 899968,
+    "bytes": 64
+   },
+   {
+    "size": 4,
+    "offset": 900032,
+    "bytes": 16
+   },
+   {
+    "size": 2,
+    "offset": 900048,
+    "bytes": 16
+   },
+   {
+    "size": 1,
+    "offset": 900064,
+    "bytes": 16
+   }
+  ],
+  "srgb": true
+ },
+ "amethyst/LB_Lid/normalMap": {
+  "file": "boxtex-astc/amethyst-3.astc",
+  "size": 1024,
+  "block": 5,
+  "levels": [
+   {
+    "size": 1024,
+    "offset": 0,
+    "bytes": 672400
+   },
+   {
+    "size": 512,
+    "offset": 672400,
+    "bytes": 169744
+   },
+   {
+    "size": 256,
+    "offset": 842144,
+    "bytes": 43264
+   },
+   {
+    "size": 128,
+    "offset": 885408,
+    "bytes": 10816
+   },
+   {
+    "size": 64,
+    "offset": 896224,
+    "bytes": 2704
+   },
+   {
+    "size": 32,
+    "offset": 898928,
+    "bytes": 784
+   },
+   {
+    "size": 16,
+    "offset": 899712,
+    "bytes": 256
+   },
+   {
+    "size": 8,
+    "offset": 899968,
+    "bytes": 64
+   },
+   {
+    "size": 4,
+    "offset": 900032,
+    "bytes": 16
+   },
+   {
+    "size": 2,
+    "offset": 900048,
+    "bytes": 16
+   },
+   {
+    "size": 1,
+    "offset": 900064,
+    "bytes": 16
+   }
+  ],
+  "srgb": false
+ },
+ "amethyst/LB_Lid/orm": {
+  "file": "boxtex-astc/amethyst-4.astc",
+  "size": 1024,
+  "block": 5,
+  "levels": [
+   {
+    "size": 1024,
+    "offset": 0,
+    "bytes": 672400
+   },
+   {
+    "size": 512,
+    "offset": 672400,
+    "bytes": 169744
+   },
+   {
+    "size": 256,
+    "offset": 842144,
+    "bytes": 43264
+   },
+   {
+    "size": 128,
+    "offset": 885408,
+    "bytes": 10816
+   },
+   {
+    "size": 64,
+    "offset": 896224,
+    "bytes": 2704
+   },
+   {
+    "size": 32,
+    "offset": 898928,
+    "bytes": 784
+   },
+   {
+    "size": 16,
+    "offset": 899712,
+    "bytes": 256
+   },
+   {
+    "size": 8,
+    "offset": 899968,
+    "bytes": 64
+   },
+   {
+    "size": 4,
+    "offset": 900032,
+    "bytes": 16
+   },
+   {
+    "size": 2,
+    "offset": 900048,
+    "bytes": 16
+   },
+   {
+    "size": 1,
+    "offset": 900064,
+    "bytes": 16
+   }
+  ],
+  "srgb": false
+ },
+ "amethyst/LB_Box/map": {
+  "file": "boxtex-astc/amethyst-8.astc",
+  "size": 1024,
+  "block": 5,
+  "levels": [
+   {
+    "size": 1024,
+    "offset": 0,
+    "bytes": 672400
+   },
+   {
+    "size": 512,
+    "offset": 672400,
+    "bytes": 169744
+   },
+   {
+    "size": 256,
+    "offset": 842144,
+    "bytes": 43264
+   },
+   {
+    "size": 128,
+    "offset": 885408,
+    "bytes": 10816
+   },
+   {
+    "size": 64,
+    "offset": 896224,
+    "bytes": 2704
+   },
+   {
+    "size": 32,
+    "offset": 898928,
+    "bytes": 784
+   },
+   {
+    "size": 16,
+    "offset": 899712,
+    "bytes": 256
+   },
+   {
+    "size": 8,
+    "offset": 899968,
+    "bytes": 64
+   },
+   {
+    "size": 4,
+    "offset": 900032,
+    "bytes": 16
+   },
+   {
+    "size": 2,
+    "offset": 900048,
+    "bytes": 16
+   },
+   {
+    "size": 1,
+    "offset": 900064,
+    "bytes": 16
+   }
+  ],
+  "srgb": true
+ },
+ "amethyst/LB_Box/normalMap": {
+  "file": "boxtex-astc/amethyst-6.astc",
+  "size": 1024,
+  "block": 5,
+  "levels": [
+   {
+    "size": 1024,
+    "offset": 0,
+    "bytes": 672400
+   },
+   {
+    "size": 512,
+    "offset": 672400,
+    "bytes": 169744
+   },
+   {
+    "size": 256,
+    "offset": 842144,
+    "bytes": 43264
+   },
+   {
+    "size": 128,
+    "offset": 885408,
+    "bytes": 10816
+   },
+   {
+    "size": 64,
+    "offset": 896224,
+    "bytes": 2704
+   },
+   {
+    "size": 32,
+    "offset": 898928,
+    "bytes": 784
+   },
+   {
+    "size": 16,
+    "offset": 899712,
+    "bytes": 256
+   },
+   {
+    "size": 8,
+    "offset": 899968,
+    "bytes": 64
+   },
+   {
+    "size": 4,
+    "offset": 900032,
+    "bytes": 16
+   },
+   {
+    "size": 2,
+    "offset": 900048,
+    "bytes": 16
+   },
+   {
+    "size": 1,
+    "offset": 900064,
+    "bytes": 16
+   }
+  ],
+  "srgb": false
+ },
+ "amethyst/LB_Box/orm": {
+  "file": "boxtex-astc/amethyst-7.astc",
+  "size": 1024,
+  "block": 5,
+  "levels": [
+   {
+    "size": 1024,
+    "offset": 0,
+    "bytes": 672400
+   },
+   {
+    "size": 512,
+    "offset": 672400,
+    "bytes": 169744
+   },
+   {
+    "size": 256,
+    "offset": 842144,
+    "bytes": 43264
+   },
+   {
+    "size": 128,
+    "offset": 885408,
+    "bytes": 10816
+   },
+   {
+    "size": 64,
+    "offset": 896224,
+    "bytes": 2704
+   },
+   {
+    "size": 32,
+    "offset": 898928,
+    "bytes": 784
+   },
+   {
+    "size": 16,
+    "offset": 899712,
+    "bytes": 256
+   },
+   {
+    "size": 8,
+    "offset": 899968,
+    "bytes": 64
+   },
+   {
+    "size": 4,
+    "offset": 900032,
+    "bytes": 16
+   },
+   {
+    "size": 2,
+    "offset": 900048,
+    "bytes": 16
+   },
+   {
+    "size": 1,
+    "offset": 900064,
+    "bytes": 16
+   }
+  ],
+  "srgb": false
+ }
+}

@@ -1,0 +1,198 @@
+{
+ "surfaces": {
+  "floor0": {
+   "file": "floor0",
+   "scale": 3.25,
+   "mean": [
+    0.6495,
+    0.5578,
+    0.4569
+   ],
+   "jpg": "lm-floor0.jpg",
+   "size": [
+    1024,
+    1024
+   ]
+  },
+  "wallR0": {
+   "file": "wallR0",
+   "scale": 3.0,
+   "mean": [
+    1.0449,
+    0.8587,
+    0.6608
+   ],
+   "jpg": "lm-wallR0.jpg",
+   "size": [
+    1024,
+    512
+   ]
+  },
+  "wallL0": {
+   "file": "wallL0",
+   "scale": 5.75,
+   "mean": [
+    2.3793,
+    1.977,
+    1.5356
+   ],
+   "jpg": "lm-wallL0.jpg",
+   "size": [
+    1024,
+    512
+   ]
+  },
+  "floor1": {
+   "file": "floor1",
+   "scale": 1.875,
+   "mean": [
+    0.3362,
+    0.3394,
+    0.3458
+   ],
+   "jpg": "lm-floor1.jpg",
+   "size": [
+    1024,
+    1024
+   ]
+  },
+  "floor2": {
+   "file": "floor2",
+   "scale": 0.875,
+   "mean": [
+    0.0485,
+    0.05,
+    0.0502
+   ],
+   "jpg": "lm-floor2.jpg",
+   "size": [
+    1024,
+    1024
+   ]
+  },
+  "wallR2": {
+   "file": "wallR2",
+   "scale": 0.375,
+   "mean": [
+    0.1382,
+    0.1455,
+    0.1457
+   ],
+   "jpg": "lm-wallR2.jpg",
+   "size": [
+    1024,
+    512
+   ]
+  },
+  "wallL2": {
+   "file": "wallL2",
+   "scale": 0.25,
+   "mean": [
+    0.0971,
+    0.1054,
+    0.106
+   ],
+   "jpg": "lm-wallL2.jpg",
+   "size": [
+    1024,
+    512
+   ]
+  },
+  "floor3": {
+   "file": "floor3",
+   "scale": 0.875,
+   "mean": [
+    0.1612,
+    0.1147,
+    0.1167
+   ],
+   "jpg": "lm-floor3.jpg",
+   "size": [
+    1024,
+    1024
+   ]
+  },
+  "mask2": {
+   "file": "mask2",
+   "scale": 0.625,
+   "mean": [
+    0.0087,
+    0.0078,
+    0.008
+   ],
+   "jpg": "lm-mask2.jpg",
+   "size": [
+    512,
+    512
+   ]
+  },
+  "maskR2": {
+   "file": "maskR2",
+   "scale": 0.25,
+   "mean": [
+    0.047,
+    0.047,
+    0.047
+   ],
+   "jpg": "lm-maskR2.jpg",
+   "size": [
+    512,
+    256
+   ]
+  },
+  "maskL2": {
+   "file": "maskL2",
+   "scale": 0.125,
+   "mean": [
+    0.0075,
+    0.0075,
+    0.0075
+   ],
+   "jpg": "lm-maskL2.jpg",
+   "size": [
+    512,
+    256
+   ]
+  }
+ },
+ "geometry": {
+  "about": "P4 Revolving Stage geometry (round 4: axis 2.8 upstage, flats 2.8), shared by bake/bake_revolve.py (Blender, Z up) and js/revolve.js (three, Y up). Blender (x, y, z) = three (x, z, -y). Units = box units (camera.json). The revolve turns about the vertical axis through C = (Ax, Ay) (Blender floor plane), straight upstage of the front box, on the camera's line of sight: the box at rest stands at the origin in front of the 90 deg corner formed by its set's two flats, and the stage turning moves it straight across the screen. Set k is set 0 turned by k*90 deg about C (Blender, from +X towards +Y = screen right); position p turns the revolve by -p*90 deg. Walls j (between set j and j+1) are radial from C at A0 + 45 + 90 j deg, A0 = direction from C to the origin. Set-local coordinates = world coordinates of set 0 at rest.",
+  "Ax": -2.8,
+  "Ay": 0.0,
+  "Rf": 7.2,
+  "Lw": 2.8,
+  "T": 0.2,
+  "H": 8.0,
+  "bevel": 0.035,
+  "zb": -0.4516,
+  "plinth": 0.03,
+  "floorRes": 1024,
+  "wallRes": [
+   1024,
+   512
+  ]
+ },
+ "samples": 256,
+ "albedo": {
+  "ivory": [
+   0.8466,
+   0.7758,
+   0.6724
+  ],
+  "reeded": [
+   0.7156,
+   0.745,
+   0.8054
+  ],
+  "riviera": [
+   0.6939,
+   0.6105,
+   0.4969
+  ],
+  "desert": [
+   0.6724,
+   0.4564,
+   0.3005
+  ]
+ }
+}

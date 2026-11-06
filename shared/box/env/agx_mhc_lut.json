@@ -1,0 +1,10 @@
+{
+ "N": 48,
+ "minEV": -14.0,
+ "maxEV": 8.0,
+ "format": "RGBA8, r fastest",
+ "view": "AgX",
+ "look": "AgX - Medium High Contrast",
+ "exposure_not_baked": -0.3499999940395355,
+ "output": "sRGB display-encoded"
+}

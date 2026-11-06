@@ -1,0 +1,209 @@
+{
+ "about": "Home camera used by the round-13 theme renders (render_leather_box.py theme view). Prototypes use the \"three\" block; the GLBs are exported Y-up with the box root at the origin, so the same numbers apply directly.",
+ "viewport_pt": [
+  375,
+  812
+ ],
+ "render_px": [
+  750,
+  1624
+ ],
+ "aspect": 0.461823,
+ "three": {
+  "position": [
+   11.01803,
+   4.75375,
+   0.00173
+  ],
+  "target": [
+   -0.20894,
+   -1.35,
+   0.00611
+  ],
+  "up": [
+   0,
+   1,
+   0
+  ],
+  "fov_vertical_deg": 53.1301,
+  "near": 0.1,
+  "far": 200,
+  "box_position": [
+   0,
+   0,
+   0
+  ],
+  "box_scale": 1.0,
+  "box_rotation_y": 0.0,
+  "floor_y": -0.4516,
+  "forward": [
+   -0.87855,
+   -0.47764,
+   0.00034
+  ]
+ },
+ "blender": {
+  "location": [
+   11.01803,
+   -0.00173,
+   4.75375
+  ],
+  "look_at": [
+   -0.20894,
+   -0.00611,
+   -1.35
+  ],
+  "lens_mm": 36.0,
+  "sensor_fit": "VERTICAL",
+  "sensor_height_mm": 36,
+  "from_camera": "Banner camera",
+  "from_camera_location": [
+   8.10733,
+   -0.00286,
+   3.61204
+  ],
+  "target": [
+   -0.20894,
+   -0.00611,
+   0.35
+  ],
+  "dist_factor": 1.35,
+  "look_drop": -1.7,
+  "quaternion_wxyz": [
+   0.607673,
+   0.361301,
+   0.361442,
+   0.60791
+  ]
+ },
+ "box": {
+  "bounds_blender": [
+   [
+    -1.4944,
+    -1.0835,
+    -0.4516
+   ],
+   [
+    1.1974,
+    1.0777,
+    1.0045
+   ]
+  ],
+  "bounds_three": [
+   [
+    -1.4944,
+    -0.4516,
+    -1.07774
+   ],
+   [
+    1.19742,
+    1.00454,
+    1.08347
+   ]
+  ],
+  "faces": "+X (towards the camera); screen right = Blender +Y = three -Z",
+  "screen_rect_pt": [
+   104.8,
+   236.5,
+   270.1,
+   392.6
+  ],
+  "screen_rect_note": "[left, top, right, bottom] in 375x812 pt, all box meshes; the theme renders put the box bottom at ~393 pt like the native home (393.6 pt)"
+ },
+ "theme_neighbours": {
+  "note": "carousel neighbours in the theme stills (LB_SIDE default -3.0,3.45,0.5), not the native ring",
+  "boxes": [
+   {
+    "blender_location": [
+     -3.0,
+     -3.45,
+     0.0
+    ],
+    "blender_rot_z": -0.5,
+    "three_position": [
+     -3.0,
+     0.0,
+     3.45
+    ],
+    "three_rot_y": -0.5,
+    "screen": "left"
+   },
+   {
+    "blender_location": [
+     -3.0,
+     3.45,
+     0.0
+    ],
+    "blender_rot_z": 0.5,
+    "three_position": [
+     -3.0,
+     0.0,
+     -3.45
+    ],
+    "three_rot_y": 0.5,
+    "screen": "right"
+   }
+  ]
+ },
+ "tone": {
+  "view": "AgX",
+  "look": "AgX - Medium High Contrast",
+  "exposure": -0.35,
+  "lut": "env/agx_mhc_lut.bin"
+ },
+ "native": {
+  "source": "native-spike/ChronoBox/Resources/NativeBoxes.bundle/scene.json + Features/Catalog/NativeBoxesRenderer.swift (read-only)",
+  "ringCentre": [
+   -7.25327730178833,
+   0.0034338831901550293,
+   0.007174540311098099
+  ],
+  "ringRadius": 4.7,
+  "frontPosition": [
+   -2.551192283630371,
+   0.0,
+   0.0251357089728117
+  ],
+  "frontAngle": 0.003819812440199236,
+  "floorY": -0.4516025483608246,
+  "cameraPosition": [
+   6.327332019805908,
+   2.9264886379241943,
+   -0.0004136404022574425
+  ],
+  "cameraRotation_xyzw": [
+   -0.10358885675668716,
+   0.6994779109954834,
+   0.10358885675668716,
+   0.6994779109954834
+  ],
+  "boxScale": 1.15,
+  "designVerticalFOV_deg": 52.844,
+  "designAspect": 0.5625,
+  "step_rad": 1.047198,
+  "ring_formula": "item.position = centre + (R cos(a), -centre.y, R sin(a)), a = frontAngle - k*step; item rotation k*step about +Y",
+  "horizontal_fov_is_fixed": true,
+  "vertical_fov_at_375x812_deg": 62.365,
+  "effective_vertical_fov_with_home_zoom_deg": 59.92,
+  "home_zoom": 1.04992,
+  "front_box_bottom_anchor_pt": 393.6,
+  "camera_pitch_deg": 16.848,
+  "camera_to_front_box_distance": 9.3484,
+  "note": "The native camera looks at the ring with an off-axis projection (x/y shift) that pins the front box bottom at 393.6 pt of 812 and its centre at x = 186 pt; the theme renders reach the same on-screen box with a plain perspective camera pitched down instead (box rect below). Native units are the USDZ box (scaled 1.15)."
+ },
+ "verified": {
+  "three_test_box_px": [
+   208,
+   541,
+   471,
+   784
+  ],
+  "cycles_ref_box_px": [
+   208,
+   541,
+   471,
+   784
+  ],
+  "note": "test.html at 750x1624 and the Cycles reference agree to the pixel"
+ }
+}

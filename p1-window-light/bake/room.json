@@ -1,0 +1,87 @@
+{
+ "about": "p1 Window Light room (round 4), three.js coordinates (Y up, the camera looks toward -X, screen right = -Z). Read by bake_room.py (Blender: x, -z, y) and by js/room.js. Planes: origin + u + v, normal = u x v into the room. A closed plaster back wall, a plaster left wall meeting it in a corner, a limestone floor with a brass ring track. The one window is in the left wall near the camera, out of frame: the room sees it only as its light (the baked sky fill through it, and the live sun through the screen in it).",
+ "floorY": -0.4516,
+ "ring": {
+  "cx": -2.7,
+  "cz": 0.0,
+  "r": 2.7,
+  "stepDeg": 90
+ },
+ "planes": [
+  {
+   "name": "floor",
+   "origin": [
+    16.0,
+    -0.4516,
+    3.0
+   ],
+   "u": [
+    0,
+    0,
+    -14.0
+   ],
+   "v": [
+    -24.0,
+    0,
+    0
+   ],
+   "lm": 1024,
+   "texScale": 5.0,
+   "mat": "stone"
+  },
+  {
+   "name": "back",
+   "origin": [
+    -8.0,
+    -0.4516,
+    3.0
+   ],
+   "u": [
+    0,
+    0,
+    -14.0
+   ],
+   "v": [
+    0,
+    9.0,
+    0
+   ],
+   "lm": 1024,
+   "texScale": 4.0,
+   "mat": "plaster"
+  },
+  {
+   "name": "left",
+   "origin": [
+    16.0,
+    -0.4516,
+    3.0
+   ],
+   "u": [
+    -24.0,
+    0,
+    0
+   ],
+   "v": [
+    0,
+    9.0,
+    0
+   ],
+   "lm": 1024,
+   "texScale": 4.0,
+   "mat": "plaster"
+  }
+ ],
+ "contact": {
+  "size": 5.6,
+  "lm": 256
+ },
+ "window": {
+  "wall": "left",
+  "z": 3.0,
+  "x0": 1.0,
+  "x1": 7.0,
+  "sill": 0.15,
+  "top": 3.4
+ }
+}

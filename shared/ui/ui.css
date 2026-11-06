@@ -1,0 +1,33 @@
+/* LuxBox home UI overlay (Dima's template 1270:1519 + round-13 hero screens). Design units: 375 x 812 pt. */
+@font-face { font-family: 'General Sans'; src: url('fonts/GeneralSans-Medium.woff2') format('woff2'); font-weight: 500; font-display: block; }
+@font-face { font-family: 'General Sans'; src: url('fonts/GeneralSans-Regular.woff2') format('woff2'); font-weight: 400; font-display: block; }
+@font-face { font-family: 'Cormorant Garamond'; src: url('fonts/CormorantGaramond.woff2') format('woff2'); font-weight: 300 700; font-display: block; }
+
+.lbx-ui { position: absolute; z-index: 3; left: 0; top: 0; width: 375px; height: 812px; transform-origin: 0 0; pointer-events: none;
+  font-family: 'General Sans', -apple-system, system-ui, sans-serif; font-weight: 500; -webkit-font-smoothing: antialiased;
+  overflow: hidden; contain: layout paint; }
+.lbx-ui * { box-sizing: border-box; }
+.lbx-ui .a { position: absolute; }
+.lbx-ui .t { position: absolute; white-space: nowrap; margin: 0; }
+.lbx-ui.hide-all { visibility: hidden; }
+.lbx-ui.hide-text .t, .lbx-ui.hide-text .glyph { visibility: hidden; }
+.lbx-ui .flip { transition: color 140ms linear; }
+
+.lbx-ui .glass { border-radius: 98px; -webkit-backdrop-filter: blur(4px); backdrop-filter: blur(4px); }
+.lbx-ui .icon { display: block; position: absolute; background: currentColor;
+  -webkit-mask-repeat: no-repeat; mask-repeat: no-repeat; -webkit-mask-size: 100% 100%; mask-size: 100% 100%; }
+
+.lbx-ui .strip { left: 0; width: 375px; height: 84px; filter: blur(4px); }
+.lbx-ui .card { width: 125px; height: 57px; border-radius: 10px; border-width: 1px; border-style: solid; }
+.lbx-ui .wimg { position: absolute; object-fit: contain; }
+.lbx-ui .cname { white-space: normal; font-size: 8px; line-height: 1.1; width: 70px; height: 18px; overflow: hidden; }
+
+.lbx-ui .name { left: 0; width: 375px; top: 432px; height: 44px; line-height: 44px; text-align: center;
+  font-family: 'Cormorant Garamond', 'Times New Roman', serif; font-weight: 300; font-size: 36px; letter-spacing: -0.72px; will-change: transform, opacity; }
+.lbx-ui .tier { left: 0; width: 375px; top: 476px; height: 14px; display: flex; align-items: center; justify-content: center; gap: 4px; will-change: transform, opacity; }
+.lbx-ui .tier .dot { width: 7px; height: 7px; border-radius: 50%; background: #fff; opacity: 0.2; box-shadow: 0 0 2px rgba(61,136,249,.7); flex: none; }
+.lbx-ui .tier .t { position: static; font-size: 10px; line-height: 14px; text-transform: uppercase; }
+
+.lbx-ui .swipe { left: 12px; top: 706px; width: 351px; height: 60px; }
+.lbx-ui .swipe img { position: absolute; inset: 0; width: 351px; height: 60px; }
+.lbx-ui .home { left: 118px; top: 799px; width: 139px; height: 5px; border-radius: 100px; }
