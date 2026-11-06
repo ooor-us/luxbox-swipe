@@ -236,9 +236,15 @@ const ALT = [2, 0, 0, 0];
 const altTint = (seam) => tintOf(ALT[seam] === 2 ? 2 : 0);
 const INF = 9;
 /** Per key at e: the ink (0 lower, 1 upper, 2 opposite polarity) and its scrim opacity (conservative between samples). */
+// Round 6: the zone scrims are off by default. Their solved opacities stepped on and off during a swipe (the top band
+// went 0 -> 0.38 -> 0 -> 0.54 and back), which read as the room's light flickering, and the name zone showed as a
+// box around the name. Now every label switches ink once at e = 0.5 and carries a soft glow of the opposite polarity
+// whose strength is a smooth bell in e (zero at rest). ?scrim=1 restores the solved scrims.
+const SCRIMS = params.get('scrim') === '1';
+const GLOW = params.has('glow') ? +params.get('glow') : 0.6;
 function keyState(j, seam, e) {
   const T = table();
-  if (!T || !T.need) return { ink: e >= 0.5 ? 1 : 0, alpha: 0 };
+  if (!SCRIMS || !T || !T.need) return { ink: e >= 0.5 ? 1 : 0, alpha: 0 };
   const per = T.per, q = Math.min(per, Math.max(0, e * per)), qn = Math.round(q), q0 = Math.floor(q), q1 = Math.min(per, q0 + 1);
   const ink = T.seq[seam][T.groups ? groupOf[j] : j][qn];
   const need = (qq) => { const v = T.need[seam][qq][j]; return v == null ? 0 : v[ink]; };
@@ -289,11 +295,18 @@ function applyInks(position, e) {
       if (d._a !== av) { d.style.opacity = av; d._a = av; }
     }
   });
+  const bell = Math.sin(Math.PI * Math.min(1, Math.max(0, e)));
+  const polSeam = inks[0].polarity !== inks[1].polarity;   // light room <-> dark room: half the frame fights each ink
+  const glowA = SCRIMS || measureInk ? 0 : Math.round(Math.min(0.9, GLOW * (polSeam ? 1.4 : 0.85) * bell) * 50) / 50;
   allT.forEach((el, i) => {
-    const rs = roleStyle(inks[ks[keyIdx[i]].ink], el.dataset.role);
+    const ink = inks[ks[keyIdx[i]].ink];
+    const rs = roleStyle(ink, el.dataset.role);
     if (!rs) return;
     el.style.color = rs[0];   // the kit rewrites every ink each frame, so these are written unconditionally after it
     el.style.opacity = rs[1].toFixed(3);
+    const g = ink.polarity === 'dark' ? '243,237,227' : '13,10,7';   // a dark ink glows light and vice versa
+    const ts = glowA > 0 ? `0 0 6px rgba(${g},${glowA}), 0 0 14px rgba(${g},${(glowA * 0.6).toFixed(3)})` : 'none';
+    if (el._ts !== ts) { el.style.textShadow = ts; el._ts = ts; }
   });
   glyphs.forEach((g, n) => {
     const i = glyphKey[n], ink = inks[ks[keyIdx[i]].ink], col = ink.primary;
